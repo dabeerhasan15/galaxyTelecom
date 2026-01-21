@@ -1,0 +1,123 @@
+.header {
+  background-color: white;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @media (min-width: 640px) {
+    padding: 0 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 2rem;
+  }
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  object-fit: contain;
+}
+
+.navWrapper {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav {
+  display: none;
+  align-items: center;
+  gap: 2.75rem;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.link {
+  position: relative;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  color: #696969;
+
+  &.active {
+    color: black;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -0.75rem;
+      height: 0.5rem;
+      width: 0.5rem;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      background-color: #2996A2;
+    }
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+}
+
+.contactButton {
+  background-color: #2996A2;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0891b2;
+  }
+}
+
+.mobileMenu {
+  display: block;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobileMenuButton {
+  color: #6b7280;
+  transition: color 0.2s ease-in-out;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+
+  &:hover {
+    color: #111827;
+  }
+}
+
+.mobileMenuIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}

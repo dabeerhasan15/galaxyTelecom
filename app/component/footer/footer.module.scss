@@ -1,0 +1,71 @@
+.footer {
+  position: relative;
+  height: 829px;
+  color: #fff;
+  background: linear-gradient(
+    95.54deg,
+    #0A0908 24.39%,
+    #0F2738 63.85%,
+    #11334A 79.78%,
+    #17527B 98.51%
+  );
+}
+
+.decorRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.decorLeft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  max-width: 1600px;
+  width: 100%;
+  padding-top: 6.25rem; // tailwind's pt-25 (25 * 0.25rem)
+}
+
+.container {
+  margin: 0 auto;
+  padding: 2.5rem 1rem; // py-10 + px-4
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1.5rem; // gap-6
+}
+
+.cell {
+  padding: 1rem; // p-4
+  background-color: #93c5fd; // approx tailwind blue-300/200-ish
+}
+.cellBlue500 {
+  background-color: #3b82f6;
+}
+.cellBlue400 {
+  background-color: #60a5fa;
+}
+.cellBlue300 {
+  background-color: #93c5fd;
+}
+.cellBlue200 {
+  background-color: #bfdbfe;
+}
+
+.brand {
+  font-size: 250px;
+  line-height: 1;
+}
+

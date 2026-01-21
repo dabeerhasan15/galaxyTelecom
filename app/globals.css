@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@layer components {
+  .text-primary {
+    @apply text-[#0A0908];
+  }
+
+  .text-secondary {
+    @apply text-[#696969];
+  }
+
+  .bg-color-blue{
+    @apply bg-[#2996A2]
+  }
+
+  
+}
