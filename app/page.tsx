@@ -1,16 +1,9 @@
-import { Footer } from "../component/Footer";
-import { Header } from "../component/Header";
+import { Home } from "@/pageComponent";
 
-export default function Home() {
+export default function Homes() {
   return (
     <>
-      <div className="header pb-100">
-        <Header />
-      </div>
-
-      <div className="footer ">
-        <Footer />
-      </div>
+      <Home/>
     </>
   );
 }

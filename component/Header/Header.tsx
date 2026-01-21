@@ -30,7 +30,7 @@ export const Header = () => {
           <div className={styles.navWrapper}>
             <nav className={styles.nav}>
               <a
-                href=""
+                href="/"
                 onClick={() => setActive("Home")}
                 className={linkClass("Home")}
               >
