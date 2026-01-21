@@ -1,0 +1,32 @@
+$xxl: 1600px;
+$xl_2: 1400px;
+$xl: 1200px;
+$lg: 991px;
+$md: 767px;
+$sm: 575px;
+
+$nav_for_mbl: $lg;
+
+:root {
+  --primary-color: #6366f1;
+  --secondary-color: #fbbf24;
+
+  --title-color: #fff;
+  --text-color: #d1d1d6;
+
+  --body-bg: #0a0a0f;
+
+  --border-color: rgba(255, 255, 255, 0.1);
+  --border-color-dark: #646464;
+
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 20px;
+  --space-xl: 24px;
+  --space-xxl: 32px;
+  --space-xxxl: 64px;
+
+  --border-radius-sm: 10px;
+  --border-radius-md: 32px;
+  --border-radius-lg: 40px;
+}

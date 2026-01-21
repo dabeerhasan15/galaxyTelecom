@@ -1,0 +1,62 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.validate.enable": true,
+  "javascript.validate.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": [
+    "source.addMissingImports",
+    "source.formatDocument",
+    "source.organizeImports",
+    "source.fixAll",
+    "source.fixAll.eslint"
+  ],
+  "editor.formatOnSave": true,
+  "cSpell.words": [
+    "Adsense",
+    "Aeonik",
+    "afrodita",
+    "akalogistics",
+    "Autoship",
+    "bigshort",
+    "camelcase",
+    "Cami",
+    "demi",
+    "Downsell",
+    "ewigo",
+    "handlangers",
+    "insta",
+    "invoiceq",
+    "ítems",
+    "Klarna",
+    "lastname",
+    "linkedln",
+    "luxon",
+    "octx",
+    "pallete",
+    "samahi",
+    "shapees",
+    "shaperbox",
+    "Shapermint",
+    "shapewear",
+    "tecript",
+    "testid",
+    "trafilea",
+    "treestone",
+    "tripcater",
+    "Truekind",
+    "trustpilot",
+    "twiter",
+    "Unmemo",
+    "Upsell",
+    "upselling",
+    "variatons",
+    "zestiot"
+  ]
+}
