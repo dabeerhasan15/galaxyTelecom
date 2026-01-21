@@ -1,7 +1,7 @@
 import Image from "next/image";
-import styles from "./footer.module.scss";
+import styles from "./Footer.module.scss";
 
-export const Footer=()=> {
+export const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.decorRight}>
@@ -14,14 +14,12 @@ export const Footer=()=> {
 
       <div className={styles.outer}>
         <div className={styles.content}>
-
-
           {/* Large Brand Text */}
           <div className={styles.brand}>GalaxyTelecom</div>
         </div>
       </div>
     </footer>
   );
-}
+};
 
 /* Footer */
