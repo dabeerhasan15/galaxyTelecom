@@ -1,5 +1,5 @@
-import { Footer } from "./component/footer";
-import { Header } from "./component/Header";
+import { Footer } from "../component/Footer";
+import { Header } from "../component/Header";
 
 export default function Home() {
   return (
