@@ -15,7 +15,7 @@ export const Footer = () => {
       <div className={styles.outer}>
         <div className={styles.content}>
           {/* Large Brand Text */}
-          <div className={styles.brand}>GalaxyTelecom</div>
+          <div className={styles.brand}>Galaxy</div>
         </div>
       </div>
     </footer>

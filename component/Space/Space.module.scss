@@ -1,0 +1,15 @@
+.space {
+  height: var(--space-xl);
+  &.smallSize {
+    height: var(--space-md);
+  }
+  &.regularSize {
+    height: var(--space-lg);
+  }
+  &.mediumSize {
+    height: var(--space-xl);
+  }
+  &.largeSize {
+    height: var(--space-xxxl);
+  }
+}

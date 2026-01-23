@@ -1,0 +1,122 @@
+.text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  b {
+    color: var(--title-color);
+  }
+  &.primary {
+    color: var(--primary-color);
+  }
+  &.secondary {
+    color: var(--secondary-color);
+  }
+
+  &.smallSize {
+    font-size: 0.875rem; // 14px
+    color: #8b8b9a;
+  }
+
+  &:is(h1) {
+    font-weight: 700;
+    font-size: 3.111rem; // 56px
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: var(--title-color);
+  }
+
+  &:is(h2) {
+    font-weight: 700;
+    font-size: 2rem; // 32px
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--title-color);
+  }
+
+  &:is(h3) {
+  }
+
+  &:is(h4) {
+    font-weight: 600;
+    font-size: 1.5rem; // 24px
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--title-color);
+  }
+
+  &:is(h5) {
+    font-weight: 600;
+    font-size: 1.111rem; // 18px
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--title-color);
+  }
+
+  &:is(p) {
+    &.smallSize {
+      font-size: 14px;
+    }
+    &.regularSize {
+      font-size: 1rem;
+    }
+    &.mediumSize {
+      font-size: 16px;
+    }
+    &.largeSize {
+      font-size: 14px;
+      color: white;
+    }
+  }
+}
+
+.tag {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--text-color);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-lg);
+  padding: 0.25rem 0.5rem;
+  white-space: nowrap;
+  &.mediumSize {
+    font-size: 14px;
+    padding: var(--space-sm) var(--space-lg);
+  }
+  &.successTag {
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+  }
+  &.warningTag {
+    background: rgba(255, 165, 0, 0.15);
+    color: #fbbf24;
+    border: 1px solid rgba(255, 165, 0, 0.3);
+  }
+  &.dangerTag {
+    background: rgba(255, 0, 0, 0.15);
+    color: #f44336;
+    border: 1px solid rgba(255, 0, 0, 0.3);
+  }
+}
+
+.lightWeight {
+  font-weight: 300;
+}
+.regularWeight {
+  font-weight: 400;
+}
+.mediumWeight {
+  font-weight: 500;
+}
+.semiboldWeight {
+  font-weight: 600;
+}
+.boldWeight {
+  font-weight: 700;
+}
+
+.isUpperCase {
+  text-transform: uppercase;
+}
