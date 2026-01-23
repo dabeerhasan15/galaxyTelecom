@@ -1,15 +1,14 @@
 .space {
-  height: var(--space-xl);
   &.smallSize {
-    height: var(--space-md);
+    height:8px ;
   }
   &.regularSize {
-    height: var(--space-lg);
+    height: 12px;
   }
   &.mediumSize {
-    height: var(--space-xl);
+    height: 16px;
   }
   &.largeSize {
-    height: var(--space-xxxl);
+    height: 20px;
   }
 }

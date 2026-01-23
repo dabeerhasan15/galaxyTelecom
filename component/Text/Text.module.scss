@@ -1,8 +1,11 @@
 .text {
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.5;
-  color: var(--text-color);
+  line-height: 140%;
+  color: #1F1F1F;
+
+
+
   b {
     color: var(--title-color);
   }
@@ -20,42 +23,50 @@
 
   &:is(h1) {
     font-weight: 700;
-    font-size: 3.111rem; // 56px
-    line-height: 1.1;
-    letter-spacing: -0.01em;
-    color: var(--title-color);
+    font-size: 80px;
+    line-height: 110%;
+    letter-spacing: -0.04em;
+    color: #1F1F1F;
   }
 
   &:is(h2) {
-    font-weight: 700;
-    font-size: 2rem; // 32px
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    color: var(--title-color);
+
+        
+font-style: normal;
+font-weight: 400;
+font-size: 82px;
+line-height: 110%;
+color: #0A0908;
+
+
   }
 
   &:is(h3) {
+    
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 130%;
+color: #1F1F1F;
+
+
   }
 
   &:is(h4) {
-    font-weight: 600;
-    font-size: 1.5rem; // 24px
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    color: var(--title-color);
+    
   }
 
   &:is(h5) {
-    font-weight: 600;
-    font-size: 1.111rem; // 18px
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    color: var(--title-color);
+    color: #696969;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
   }
 
   &:is(p) {
     &.smallSize {
-      font-size: 14px;
+      font-size: 20px;
+      color: #1F1F1F;
     }
     &.regularSize {
       font-size: 1rem;
@@ -64,8 +75,11 @@
       font-size: 16px;
     }
     &.largeSize {
-      font-size: 14px;
-      color: white;
+      font-style: normal;
+      font-size: 24px;
+      color: #696969;
+
+
     }
   }
 }
