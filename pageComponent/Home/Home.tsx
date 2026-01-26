@@ -39,9 +39,9 @@ export const Home = () => {
         <div className="row">
             <div className="col-lg-1"></div>
             <div className="col-lg-10">
-              <Text tag={htmlTag.h5}>Our Vision</Text>
+              <Text tag={htmlTag.h4}>Our Vision</Text>
               <Text tag={htmlTag.h2}>We can enhance your <span className={classes.productivity}>productivity</span></Text>
-              <Text tag={htmlTag.h2}>& secure the <span className={classes.future}>future of your <br/> telecom operation</span></Text>
+              <Text tag={htmlTag.h2}>& secure the <span className={classes.future}>future of your telecom operation</span></Text>
             </div>
             <div className="col-lg-1"></div>
         </div>
@@ -64,10 +64,36 @@ export const Home = () => {
 <div className="container">
   <div className="row">
     <div className="col-lg-1"></div>
-    <div className="col-lg-10">sjsj</div>
+    <div className="col-lg-10">
+      <div className="row">
+        <div className="col-lg-6"><Text tag={htmlTag.h1}>Membership & Accreditation</Text></div>
+        <div className="col-lg-6"><Text tag={htmlTag.h5}>Recognized by leading industry bodies for maintaining the highest standards of excellence.</Text></div>
+      </div>
+
+      <Space />
+      <Space />
+      <Space />
+      <Space />
+
+      <div className="row">
+        <div className="col-lg-3">
+          <div className={classes.membershipDetail}>
+            <Text>Dun & Bradstreet</Text>
+            <Text>Registered Company</Text>
+            <Text>561427868</Text>
+            <img src="./membership1.png" alt="membership" />
+          </div>
+        </div>
+        <div className="col-lg-3">233</div>
+        <div className="col-lg-3">2</div>
+        <div className="col-lg-3">2</div>
+        
+      </div>
+    </div>
     <div className="col-lg-1"></div>
     </div>
 </div>
-</div></>
+</div>
+</>
   );
 };
