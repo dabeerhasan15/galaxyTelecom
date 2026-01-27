@@ -90,15 +90,33 @@ padding-bottom: 120px;
     .whatWeOffer{
         padding-top: 120px;
         padding-bottom: 120px;
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+        align-items: center;
+
+            .centerColumn {
+                display: flex;
+                align-items: center;
+              
+        }
 
         .textDetail{
-            padding-top: 70px;
+            
             .weOffer{
                 font-weight: 400;
                 font-size: 64px;
                 line-height: 130%;
                 color: #0A0908;
-                        }
+            }
+            .learnmore{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                
+            }
+            
         }
 
         
