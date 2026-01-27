@@ -2,6 +2,7 @@ import { Space } from "@/component/Space";
 import { Text } from "@/component/Text";
 import { componentSizes, htmlTag } from "@/types";
 
+import Image from "next/image";
 import classes from "./Home.module.scss";
 
 export const Home = () => {
@@ -45,7 +46,6 @@ export const Home = () => {
             </div>
             <div className="col-lg-1"></div>
         </div>
-
         <Space size={componentSizes.large}/>
         <Space size={componentSizes.large}/>
         <Space size={componentSizes.large}/>
@@ -56,8 +56,6 @@ export const Home = () => {
         <Space size={componentSizes.large}/>
         <Space size={componentSizes.large}/>
         <Space size={componentSizes.large}/>
-
-
       </div>
 
 <div className={classes.MembershipAccreditation}>
@@ -78,21 +76,95 @@ export const Home = () => {
       <div className="row">
         <div className="col-lg-3">
           <div className={classes.membershipDetail}>
-            <Text>Dun & Bradstreet</Text>
-            <Text>Registered Company</Text>
-            <Text>561427868</Text>
-            <img src="./membership1.png" alt="membership" />
+            <Text tag={htmlTag.h3}>Dun & Bradstreet</Text>
+            <Space size={componentSizes.regular}/>
+            <Space/>
+            <Text className={classes.registeredCompany}>Registered Company</Text>
+            <Space size={componentSizes.small}/>
+            <Text className={classes.companyIds}>561427868</Text>
+            <Space size={componentSizes.regular}/>
+            <Space size={componentSizes.regular}/>
+            <Space size={componentSizes.regular}/>
+            <div className={classes.images}><Image src="/membership1.png" alt="membership" width={184} height={32} /></div>
           </div>
         </div>
-        <div className="col-lg-3">233</div>
-        <div className="col-lg-3">2</div>
-        <div className="col-lg-3">2</div>
+        <div className="col-lg-3">
+          <div className={classes.membershipDetail}>
+            <Text tag={htmlTag.h3}>Ethixbase360</Text>
+            <Space size={componentSizes.regular}/>
+            <Space/>
+            <Text className={classes.registeredCompany}>Registered Company</Text>
+            <Space size={componentSizes.small}/>
+            <Text className={classes.companyIds}>TC 4194-7948</Text>
+            <Space size={componentSizes.regular}/>
+            <Space size={componentSizes.regular}/>
+            <Space size={componentSizes.regular}/>
+            <div className={classes.images}><Image src="/membership2.png" alt="membership" width={143} height={48}  /></div>
+          </div>
+        </div>
+        <div className="col-lg-3">
+          <div className={classes.membershipDetail}>
+            <Text tag={htmlTag.h3}>NCAGE Code</Text>
+            <Space size={componentSizes.regular}/>
+            <Space/>
+            <Text className={classes.registeredCompany}>Registered Company</Text>
+            <Space size={componentSizes.small}/>
+            <Text className={classes.companyIds}>2GELW</Text>
+            <Space size={componentSizes.regular}/>
+            <Space size={componentSizes.regular}/>
+            <Space size={componentSizes.regular}/>
+            <div className={classes.images}><Image src="/membership3.png" alt="membership"  width={77} height={32} /></div>
+          </div>
+        </div>
+        <div className="col-lg-3">
+          <div className={classes.membershipDetails}>
+            <Text tag={htmlTag.h3}>TDRA</Text>
+            <Space size={componentSizes.regular}/>
+            <Space/>
+            <Text className={classes.registeredCompany}>Registered Company</Text>
+            <Space size={componentSizes.small}/>
+            <Text className={classes.companyIds}>DA25608/24</Text>
+            <Space size={componentSizes.regular}/>
+            <Space size={componentSizes.regular}/>
+            <Space size={componentSizes.regular}/>
+            <div className={classes.images}><Image  src="/membership4.png" alt="membership"  width={64} height={49} /></div>
+          </div>
+        </div>
         
       </div>
     </div>
     <div className="col-lg-1"></div>
     </div>
 </div>
+</div>
+
+<div className="container">
+  <div className={classes.whatWeOffer}>
+  <div className="row">
+    <div className="col-lg-1"></div>
+    <div className="col-lg-4">
+    <Image  src="/weOffer1.png" alt="membership"  width={544} height={437} />
+    </div> 
+    <div className="col-lg-1">
+    </div>
+    <div className="col-lg-5">
+      <div className={classes.textDetail}>
+      <div className={classes.weOffer}>What we offer</div>
+      <Space size={componentSizes.small}/>
+      <Space size={componentSizes.large}/>
+      <Text size={componentSizes.medium}>We offer Voice and Data Connectivity products and services to various business verticals – oil & Gas / Defense / Media / Maritime / Government & Humanitarian Agencies.</Text>
+      <Space size={componentSizes.small}/>
+      <Space size={componentSizes.large}/>
+      <Space size={componentSizes.large}/>
+      <Text>Learn More <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 9.5H25M25 9.5L16.5 1M25 9.5L16.5 18" stroke="#0A0908" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</Text>
+      </div>
+    </div>
+    <div className="col-lg-1"></div>
+  </div>
+  </div>
 </div>
 </>
   );

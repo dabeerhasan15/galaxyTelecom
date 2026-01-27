@@ -45,7 +45,7 @@ color: #0A0908;
     
 font-style: normal;
 font-weight: 700;
-font-size: 40px;
+font-size: 32px;
 line-height: 130%;
 color: #1F1F1F;
 
@@ -75,7 +75,10 @@ color: #0A0908;
       font-size: 1rem;
     }
     &.mediumSize {
-      font-size: 16px;
+font-weight: 300;
+font-size: 24px;
+line-height: 140%;
+color: #0A0908;
     }
     &.largeSize {
       font-style: normal;

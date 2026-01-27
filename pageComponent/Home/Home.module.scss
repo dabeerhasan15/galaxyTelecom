@@ -31,11 +31,76 @@ padding-top: 120px;
 padding-bottom: 120px;
 
 .membershipDetail{
-    padding-top: 44px;
-    padding-bottom: 28px;
-    margin-bottom: 12px;
-    margin-top: 12px;
-    border-right: 1px solid black;
-}
+    padding-top: 24px;
+    padding-bottom: 24px;
+   
+    border-right: 1px solid #474747;
+
+    .registeredCompany{
+        
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140%;
+        color: #444444;}
+
+        .companyId{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        color: #444444;
+        }
+
+        .images{
+            height: 49;
+        }
+
+        }
+
+        .membershipDetails{
+            padding-top: 24px;
+            padding-bottom: 24px;
+            
+            
+        
+            .registeredCompany{
+                
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 140%;
+                color: #444444;}
+        
+                .companyId{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 140%;
+                color: #444444;
+                }
+
+                .images{
+                    height: 49;
+                }
+                
+                }
 
     }
+
+
+    // whatWeOffer
+
+    .whatWeOffer{
+        padding-top: 120px;
+        padding-bottom: 120px;
+
+        .textDetail{
+            padding-top: 70px;
+            .weOffer{
+                font-weight: 400;
+                font-size: 64px;
+                line-height: 130%;
+                color: #0A0908;
+                        }
+        }
+
+        
+    }
+    
