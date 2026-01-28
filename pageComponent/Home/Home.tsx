@@ -195,7 +195,17 @@ export const Home = () => {
     <div className="col-lg-1"></div>
   </div>
   </div>
+  {/* Values & code of Ethics */}
+
+  <div className={classes.Ethics}>
+    <div className="row">
+      <div className="col-lg-1"></div>
+      <div className="col-lg-10">Value of code and ethics </div>
+      <div className="col-lg-1"></div>
+    </div>
+  </div>
 </div>
+
 </>
   );
 };
