@@ -120,5 +120,48 @@ padding-bottom: 120px;
 .Ethics{
     padding-top: 200px;
     padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+        .valueofcode{
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 130%;
+            color: #0A0908;
+    }
+    .imageSection{
+        display: flex;
+        gap: 32px;
+
+    }
+
+    .ethicsContent{
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        text-align: center;
+        color: rgba(15, 15, 14, 0.3); 
+
+        .black{
+            color: rgba(15, 15, 14, 1);
+        }
+
+        .grey{
+            color: rgba(15, 15, 14, 0.6);
+        }
+}
+
+}
+
+.services{
+    padding-bottom: 240px;
+}
+
+
+.Benefits{
+    padding-bottom: 240px;
+    
+
 }
     

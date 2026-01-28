@@ -1,0 +1,27 @@
+.Benefits{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+
+  .provideTechnical{
+      font-weight: 400;
+      font-size: 56px;
+      line-height: 130%;
+      text-align: center;
+      text-transform: capitalize;
+      color: #0A0908;
+  }
+}
+
+.upperleft{
+  padding-bottom: 70px;
+  padding-right: 10px;
+
+  .heading{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130%;
+    color: #0A0908;
+  }
+}
