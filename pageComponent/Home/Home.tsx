@@ -3,6 +3,7 @@ import { Text } from "@/component/Text";
 import { componentSizes, htmlTag } from "@/types";
 
 import { Benifits } from "@/component/Benifits";
+import { Product } from "@/component/Product";
 import Image from "next/image";
 import Link from "next/link";
 import classes from "./Home.module.scss";
@@ -244,6 +245,94 @@ export const Home = () => {
   <div className={classes.Benefits}>
   <Benifits/>
   </div>
+
+  <div className={classes.Benefits}>
+  <Product/>
+  </div>
+  
+    {/* Feature */}
+    <div className="row">
+      <div className="col-lg-1"></div>
+      <div className="col-lg-10">
+        <div className="row">
+          <div className="col-lg-7">
+            <div className="row">
+              <div className="col-lg-6">
+                <div className={classes.card}>
+                  <Image
+                  src="/Logo.png"
+                  alt="Galaxy Telecom Logo"
+                  width={64}
+                  height={64}
+                />
+                  <Space size={componentSizes.small}/>
+                  <Space size={componentSizes.small}/>
+                  <Space size={componentSizes.small}/>
+                  <div className={classes.heading}>Availability</div>
+                  <Space size={componentSizes.small}/>
+                  <Text size={componentSizes.regular}>We always stock a wide selection of the most popular products in the market.</Text>
+                </div>
+              </div>
+              <div className="col-lg-6">
+              <div className={classes.card}>
+                  <Image
+                  src="/Logo.png"
+                  alt="Galaxy Telecom Logo"
+                  width={64}
+                  height={64}
+                />
+                  <Space size={componentSizes.small}/>
+                  <Space size={componentSizes.small}/>
+                  <Space size={componentSizes.small}/>
+                  <div className={classes.heading}>Price Guarantee</div>
+                  <Space size={componentSizes.small}/>
+                  <Text size={componentSizes.regular}>With our network of national and international partners we can always offer competitive prices</Text>
+                </div>
+              </div>
+              <div className="col-lg-6">
+              <div className={classes.card}>
+                  <Image
+                  src="/Logo.png"
+                  alt="Galaxy Telecom Logo"
+                  width={64}
+                  height={64}
+                />
+                  <Space size={componentSizes.small}/>
+                  <Space size={componentSizes.small}/>
+                  <Space size={componentSizes.small}/>
+                  <div className={classes.heading}>Professionalism</div>
+                  <Space size={componentSizes.small}/>
+                  <Text size={componentSizes.regular}>A team of professionals and market experts will help you in your product purchases.</Text>
+                </div>
+              </div>
+              <div className="col-lg-6">
+              <div className={classes.card}>
+                  <Image
+                  src="/Logo.png"
+                  alt="Galaxy Telecom Logo"
+                  width={64}
+                  height={64}
+                />
+                  <Space size={componentSizes.small}/>
+                  <Space size={componentSizes.small}/>
+                  <Space size={componentSizes.small}/>
+                  <div className={classes.heading}>Genuine Products</div>
+                  <Space size={componentSizes.small}/>
+                  <Text size={componentSizes.regular}>We deal only in genuine products & The products we bring to market always have an official guarantee.</Text>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-5">
+            <div>
+              <Text>Features</Text>
+              <Text>We are accessible around the clock to assist you with product purchases or offer technical support.</Text>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-1"></div>
+    </div>
 </div>
 
 </>

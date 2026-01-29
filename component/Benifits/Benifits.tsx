@@ -62,7 +62,8 @@ const UnmemoBenifits = () => {
                 <Space size={componentSizes.small}/>
                 <Text size={componentSizes.regular}>We provide a complete turnkey solution to our clients from network design, hardware selection, installation, commissioning & training. A complete end-to-end resolution is provided to run a seamless network.</Text>
               </div></div>
-            <div className="col-lg-6"><div className={classes.upperleft}>
+            <div className="col-lg-6">
+              <div className={classes.upperleft}>
                 <Image
                 src="/Logo.png"
                 alt="Galaxy Telecom Logo"
