@@ -38,7 +38,7 @@ export const Home = () => {
         <div className="row">
             <div className="col-lg-1"></div>
             <div className="col-lg-10"><div className={classes.picture}>
-            <div style={{ width: '100%', height: '100vh' }}>
+            <div style={{ width: '100%', height: '800px' }}>
       <Spline scene="https://prod.spline.design/jN1JmdBfGBRTtV6o/scene.splinecode" />
     </div>
 
