@@ -4,6 +4,7 @@ import { componentSizes, htmlTag } from "@/types";
 
 import { Benifits } from "@/component/Benifits";
 import { Product } from "@/component/Product";
+import Spline from "@splinetool/react-spline";
 import Image from "next/image";
 import Link from "next/link";
 import classes from "./Home.module.scss";
@@ -36,7 +37,12 @@ export const Home = () => {
 
         <div className="row">
             <div className="col-lg-1"></div>
-            <div className="col-lg-10"><div className={classes.picture}>picture here </div> </div>
+            <div className="col-lg-10"><div className={classes.picture}>
+            <div style={{ width: '100%', height: '100vh' }}>
+      <Spline scene="https://prod.spline.design/jN1JmdBfGBRTtV6o/scene.splinecode" />
+    </div>
+
+            </div> </div>
             <div className="col-lg-1"></div>
         </div>
 
