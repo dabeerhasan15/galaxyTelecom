@@ -1,0 +1,66 @@
+.freeConsultancy{
+  width: 100%;
+  height: 298px;
+  background: linear-gradient(95.54deg, #0A0908 24.39%, #0F2738 63.85%, #11334A 79.78%, #17527B 98.51%);
+  border-radius:0 32px 32px  0;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  padding-top: 48px;
+
+  
+
+
+    
+
+    .content{
+      position: absolute;
+      right: 263px;
+
+      .heading{
+font-weight: 600;
+font-size: 46px;
+line-height: 110%;
+text-transform: capitalize;
+color: #FFFFFF;
+
+      }
+
+      .tag{
+        display: inline-block;
+        padding: 8px 16px;
+        background: #F8F8F8;
+        border: 1px solid #E0E0E0;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 32px;
+        background: #FFFFFF;
+        border-radius: 100px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 110%;
+        text-align: center;
+        text-transform: capitalize;
+        color: #0A0908;
+  
+  
+      }
+
+    }
+
+
+    .image {
+      position: absolute;
+      bottom: 0;
+    }
+    
+    .imageWrapper {
+      border-radius: 30px;
+      overflow: hidden;
+    }
+    
+    .img {
+      display: block;
+    }
+    
+  }

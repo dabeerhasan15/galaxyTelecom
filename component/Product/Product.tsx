@@ -8,6 +8,7 @@ import classes from "./Product.module.scss";
 
 const UnmemoProduct = () => {
   return(
+    <>
     <div className="container">
       <div className="row">
         <div className="col-lg-1"></div>
@@ -96,6 +97,8 @@ const UnmemoProduct = () => {
 
 
     </div>
+    </>
+    
   )
   
 };

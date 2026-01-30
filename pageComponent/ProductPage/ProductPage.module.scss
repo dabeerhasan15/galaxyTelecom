@@ -2,3 +2,31 @@
     padding-bottom:120px ;
     padding-top:180px ;
 }
+
+.product{
+    position: relative;
+    margin-top: 114px;
+    background-image: url("/productbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+
+    
+    .image{
+        position: absolute;
+        right: -12;
+        padding-top: 20px;
+    }
+
+
+
+    .content{
+       padding-top: 284px;
+
+
+    
+    }
+    
+
+}
