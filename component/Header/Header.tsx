@@ -1,14 +1,20 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import styles from "./Header.module.scss";
 
 export const Header = () => {
-  const [active, setActive] = useState("Home");
+  const pathname = usePathname();
 
-  const linkClass = (name: string) =>
-    `${styles.link} ${active === name ? styles.active : ""}`;
+  const isActive = (path: string) => {
+    if (path === "/") return pathname === "/";
+    return pathname.startsWith(path);
+  };
+
+  const linkClass = (path: string) =>
+    `${styles.link} ${isActive(path) ? styles.active : ""}`;
 
   return (
     <header className={styles.header}>
@@ -29,34 +35,18 @@ export const Header = () => {
 
           <div className={styles.navWrapper}>
             <nav className={styles.nav}>
-              <a
-                href="/"
-                onClick={() => setActive("Home")}
-                className={linkClass("Home")}
-              >
+              <Link href="/" className={linkClass("/")}>
                 Home
-              </a>
-              <a
-                href="/aboutUs"
-                onClick={() => setActive("About")}
-                className={linkClass("About")}
-              >
+              </Link>
+              <Link href="/aboutUs" className={linkClass("/aboutUs")}>
                 About Us
-              </a>
-              <a
-                href="/services"
-                onClick={() => setActive("Services")}
-                className={linkClass("Services")}
-              >
+              </Link>
+              <Link href="/services" className={linkClass("/services")}>
                 Services
-              </a>
-              <a
-                href="/product"
-                onClick={() => setActive("Product")}
-                className={linkClass("Product")}
-              >
+              </Link>
+              <Link href="/product" className={linkClass("/product")}>
                 Product
-              </a>
+              </Link>
             </nav>
 
             <div className={styles.buttonContainer}>
