@@ -180,3 +180,31 @@ margin-bottom: 32px;
       color: #0A0908;
     }
   }
+
+.featureSection{
+    position: relative;
+    padding-top: 100px;
+
+    .featureText{
+        position: absolute;
+        bottom: 0;
+        margin-right:60px;
+        margin-bottom: 20px;
+
+        .text{
+            font-weight: 400;
+            font-size: 44px;
+            line-height: 110%;
+            text-transform: capitalize;
+            color: #0A0908;
+
+        }
+        
+}
+
+    .image{
+        display: flex;
+        justify-content: end;
+
+    }
+}

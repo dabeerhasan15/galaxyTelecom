@@ -324,15 +324,29 @@ export const Home = () => {
             </div>
           </div>
           <div className="col-lg-5">
-            <div>
-              <Text>Features</Text>
-              <Text>We are accessible around the clock to assist you with product purchases or offer technical support.</Text>
+            <div className={classes.featureSection}>
+              <div className={classes.featureText}>
+              <Text tag={htmlTag.h4}>Features</Text>
+              <div className={classes.text}>We are accessible around the clock to assist you with product purchases or offer technical support.</div>
+              </div>
+              <div className={classes.image}><Image src="/feature.png" alt="membership" width={452} height={446} /></div>
             </div>
           </div>
         </div>
       </div>
       <div className="col-lg-1"></div>
     </div>
+
+      <Space size={componentSizes.large}/>
+      <Space size={componentSizes.large}/>
+      <Space size={componentSizes.large}/>
+      <Space size={componentSizes.large}/>
+      <Space size={componentSizes.large}/>
+      <Space size={componentSizes.large}/>
+      <Space size={componentSizes.large}/>
+      <Space size={componentSizes.large}/>
+      <Space size={componentSizes.large}/>
+      <Space size={componentSizes.large}/>
 </div>
 
 </>
