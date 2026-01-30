@@ -1,9 +1,12 @@
 "use client";
 
+import { componentSizes } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { Space } from "../Space";
+import { Text } from "../Text";
 import styles from "./Header.module.scss";
 
 export const Header = () => {
@@ -109,6 +112,7 @@ export const Header = () => {
               <div className="row">
                 <div className="col-lg-4">
                   <div className={styles.flexgap}>
+
                   <div className={styles.modalHeader}>
                     <p className={styles.modalSubtitle}>Sales Team</p>
                     <h2 className={styles.modalTitle}>Contact Now</h2>
@@ -128,7 +132,7 @@ export const Header = () => {
 
                       <div className={styles.infoItem}>
                         <h4>P.O. Box</h4>
-                        <p>1658</p>
+                        <Text>1658</Text>
                       </div>
 
                       <div className={styles.infoItem}>
@@ -167,34 +171,40 @@ export const Header = () => {
                   <form className={styles.contactForm}>
                 <div className={styles.formRow}>
                   <div className={styles.formGroup}>
-                    <label>Name*</label>
-                    <input type="text" placeholder="Your full name" />
+                    <label>Full Name *</label>
+                    <Space size={componentSizes.medium}/>
+                    <input type="text" placeholder="Enter First Name" />
                   </div>
                   <div className={styles.formGroup}>
-                    <label>CONTACT*</label>
-                    <input type="tel" placeholder="+92" />
+                    <label>Last Name*</label>
+                    <Space size={componentSizes.medium}/>
+                    <input type="text" placeholder="Enter Last Name" />
                   </div>
                 </div>
 
-                <div className={styles.formRow}>
+                <div className={styles.formRow}> 
                   <div className={styles.formGroup}>
-                    <label>Email Address*</label>
-                    <input type="email" placeholder="Your email address" />
+                    <label>Phone Number *</label>
+                    <Space size={componentSizes.medium}/>
+                    <input type="text" placeholder="Enter Phone Number" />
                   </div>
                   <div className={styles.formGroup}>
-                    <label>CITY*</label>
-                    <input type="text" placeholder="Your city" />
+                    <label>Email *</label>
+                    <Space size={componentSizes.medium}/>
+                    <input type="email" placeholder="Enter Email" />
                   </div>
                 </div>
 
                 <div className={styles.formGroup}>
                   <label>Message*</label>
+                  <Space size={componentSizes.medium}/>
                   <textarea 
-                    placeholder="Type your message here"
+                    placeholder="Enter Message"
                     rows={4}
                   />
                 </div>
-
+                <Space size={componentSizes.medium}/>
+                <Space size={componentSizes.medium}/>
                 <button type="submit" className={styles.submitButton}>
                   Submit
                 </button>
