@@ -1,12 +1,13 @@
 .footer {
   position: relative;
   color: #fff;
+  overflow: hidden;
   background: linear-gradient(
     95.54deg,
-    #0A0908 24.39%,
-    #0F2738 63.85%,
-    #11334A 79.78%,
-    #17527B 98.51%
+    #0a0908 24.39%,
+    #0f2738 63.85%,
+    #11334a 79.78%,
+    #17527b 98.51%
   );
 }
 
@@ -69,7 +70,7 @@
 //   display: flex;
 //   justify-content: center;
 //   align-items: center;
-  
+
 // }
 
 .brand {
@@ -78,6 +79,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
+  margin-bottom: -100px;
 }
 
 @media (max-width: 1024px) {
@@ -98,163 +101,149 @@
   }
 }
 
-
-
-.Text{
-font-weight: 400;
-font-size: 15.8px;
-line-height: 18px;
-letter-spacing: -0.32px;
-color: #FFFFFF;
+.Text {
+  font-weight: 400;
+  font-size: 15.8px;
+  line-height: 18px;
+  letter-spacing: -0.32px;
+  color: #ffffff;
 }
 
-.email{
-background: rgba(255, 255, 255, 0.1);
-backdrop-filter: blur(12.5px);
-border-radius: 8px;
-
-font-weight: 400;
-font-size: 16px;
-line-height: 12px;
-letter-spacing: 1.2px;
-text-transform: uppercase;
-color: #FFFFFF;
-opacity: 0.5;
-}
-
-.signup{
-
-background: #F5F5F5;
-border-radius: 8px;
-font-weight: 600;
-font-size: 15px;
-line-height: 20px;
-text-align: center;
-padding: 14px 0;
-color: #181818;
-
-}
-
-.input{
+.email {
   background: rgba(255, 255, 255, 0.1);
-backdrop-filter: blur(12.5px);
-border-radius: 8px;
-width: 100%;
-font-weight: 400;
-font-size: 16px;
-line-height: 12px;
-letter-spacing: 1.2px;
-text-transform: uppercase;
-color: #FFFFFF;
-opacity: 0.5;
-padding: 12px 20px;
+  backdrop-filter: blur(12.5px);
+  border-radius: 8px;
 
-    &:focus {
-      outline: none;
-      border-color: #2996A2;
-    }
-
-    &::placeholder {
-      color: #9ca3af;
-    }
-  
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.5;
 }
 
-.navigation{
+.signup {
+  background: #f5f5f5;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  padding: 14px 0;
+  color: #181818;
+}
+
+.input {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12.5px);
+  border-radius: 8px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.5;
+  padding: 12px 20px;
+
+  &:focus {
+    outline: none;
+    border-color: #2996a2;
+  }
+
+  &::placeholder {
+    color: #9ca3af;
+  }
+}
+
+.navigation {
   display: flex;
   flex-direction: column;
   gap: 25px;
 
-  .field{
-font-weight: 400;
-font-size: 16px;
-line-height: 18px;
-color: #FFFFFF;
+  .field {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
   }
 
-  .fields{
-font-weight: 400;
-font-size: 20px;
-line-height: 18px;
+  .fields {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
 
-color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
-
-.flex{
+.flex {
   display: flex;
   gap: 12px;
   align-items: center;
 }
 
-.contactUs{
+.contactUs {
   display: flex;
   gap: 48px;
 }
 
-.contact{
-font-weight: 400;
-font-size: 20px;
-line-height: 110%;
-letter-spacing: -0.01em;
-color: #FFFFFF;
-opacity: 0.4;
+.contact {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  opacity: 0.4;
 }
 
-.number{
-font-weight: 400;
-font-size: 14px;
-line-height: 160%;
-color: #FFFFFF;
+.number {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #ffffff;
 }
 
-.ppo{
-font-weight: 400;
-font-size: 14px;
-line-height: 160%;
-color: rgba(255, 255, 255, 0.7);
+.ppo {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.termandservice{
+.termandservice {
   margin-top: 93px;
   padding-top: 25px;
   border-top: 1px solid rgba(255, 255, 255, 0.25);
 
-  .terms{
+  .terms {
     display: flex;
     gap: 12px;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #FFFFFF;
+    color: #ffffff;
 
-    .support{
+    .support {
       padding-right: 12px;
-
     }
 
-    .privacy{
+    .privacy {
       display: flex;
       gap: 32px;
     }
-
-    
   }
 
-  .images{
+  .images {
     display: flex;
     gap: 18px;
   }
 
-  .social{
+  .social {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 999px;
     padding: 12px;
-
   }
-
-
 }
-
-
