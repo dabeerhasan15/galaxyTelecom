@@ -1,6 +1,5 @@
 .footer {
   position: relative;
-  height: 829px;
   color: #fff;
   background: linear-gradient(
     95.54deg,
@@ -64,9 +63,39 @@
   background-color: #bfdbfe;
 }
 
+// .brand {
+//   font-size: 14rem;
+//   text-align: center;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+  
+// }
+
 .brand {
   font-size: 14rem;
-  line-height: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .brand {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand {
+    font-size: 3rem;
+  }
 }
 
 
@@ -163,4 +192,69 @@ color: #FFFFFF;
   display: flex;
   gap: 48px;
 }
+
+.contact{
+font-weight: 400;
+font-size: 20px;
+line-height: 110%;
+letter-spacing: -0.01em;
+color: #FFFFFF;
+opacity: 0.4;
+}
+
+.number{
+font-weight: 400;
+font-size: 14px;
+line-height: 160%;
+color: #FFFFFF;
+}
+
+.ppo{
+font-weight: 400;
+font-size: 14px;
+line-height: 160%;
+color: rgba(255, 255, 255, 0.7);
+}
+
+.termandservice{
+  margin-top: 93px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+  .terms{
+    display: flex;
+    gap: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+
+    .support{
+      padding-right: 12px;
+
+    }
+
+    .privacy{
+      display: flex;
+      gap: 32px;
+    }
+
+    
+  }
+
+  .images{
+    display: flex;
+    gap: 18px;
+  }
+
+  .social{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+    padding: 12px;
+
+  }
+
+
+}
+
 
