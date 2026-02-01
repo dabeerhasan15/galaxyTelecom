@@ -14,8 +14,39 @@ export const Footer = () => {
 
       <div className={styles.outer}>
         <div className={styles.content}>
-          {/* Large Brand Text */}
-          <div className={styles.brand}>G</div>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-1"></div>
+              <div className="col-lg-3">a</div>
+              <div className="col-lg-3"></div>
+              <div className="col-lg-1">a</div>
+              <div className="col-lg-1"></div>
+              <div className="col-lg-2">a</div>
+              <div className="col-lg-1"></div>
+            </div>
+
+            <div className="row">
+              <div className="col-lg-1"></div>
+              <div className="col-lg-5">ww</div>
+              <div className="col-lg-3"></div>
+              <div className="col-lg-2">ww</div>
+              <div className="col-lg-1"></div>
+            </div>
+
+
+            <div className="row">
+              <div className="col-lg-1"></div>
+              <div className="col-lg-6">ww</div>
+              <div className="col-lg-2"></div>
+              <div className="col-lg-2">sss</div>
+              <div className="col-lg-1"></div>
+            </div>
+
+            <div className="row">
+            <div className={styles.brand}>G</div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </footer>
