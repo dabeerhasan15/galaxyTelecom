@@ -1,3 +1,9 @@
+.services {
+  .col-lg-4 {
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+
 .serviceText {
   display: flex;
   flex-direction: column;
@@ -19,6 +25,7 @@
   line-height: 140%;
   text-transform: capitalize;
   color: #0A0908;
+  padding-right: 50px;
 }
 
 .navigationButtons {

@@ -1,10 +1,9 @@
+
 "use client";
 
 import { memo, useState } from "react";
 import { Card } from "../Card";
 import classes from "./Service.module.scss";
-
-
 
 const cardData = [
   {
@@ -13,9 +12,14 @@ const cardData = [
     description: "Galaxy Telecom with its strong global network offers a complete satellite network solution inclusive of space segment and ground equipment."
   },
   {
-    image: "/servicecard1.png",
-    title: "Satellite Network service",
-    description: "Galaxy Telecom with its strong global network offers a complete satellite network solution inclusive of space segment and ground equipment."
+    image: "/servicecard2.png",
+    title: "IOT (Internet of Things) Solutions",
+    description: "Galaxy Telecom provides a broad range of IOT solutions. We will help you build and optimize your IoT network efficiently."
+  },
+  {
+    image: "/servicecard3.png",
+    title: "Cellular Backhaul Solution",
+    description: "Galaxy Telecom helps Telecom Operators to design and implement a robust cellular backhaul solution combining Satellite & Fiber connectivity."
   },
   {
     image: "/servicecard1.png",
@@ -23,30 +27,31 @@ const cardData = [
     description: "Galaxy Telecom with its strong global network offers a complete satellite network solution inclusive of space segment and ground equipment."
   },
   {
-    image: "/servicecard1.png",
-    title: "Satellite Network service",
-    description: "Galaxy Telecom with its strong global network offers a complete satellite network solution inclusive of space segment and ground equipment."
-  }
+    image: "/servicecard2.png",
+    title: "IOT (Internet of Things) Solutions",
+    description: "Galaxy Telecom provides a broad range of IOT solutions. We will help you build and optimize your IoT network efficiently."
+  },
+  {
+    image: "/servicecard3.png",
+    title: "Cellular Backhaul Solution",
+    description: "Galaxy Telecom helps Telecom Operators to design and implement a robust cellular backhaul solution combining Satellite & Fiber connectivity."
+  } 
 ];
 
-const Unmemoservice= () => {
+const Unmemoservice = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const cardsPerPage = 2;
-  const totalPages = Math.ceil(cardData.length / cardsPerPage);
 
   const handleNext = () => {
     setCurrentIndex((prev) => 
-      prev + cardsPerPage >= cardData.length ? 0 : prev + cardsPerPage
+      prev + 1 >= cardData.length - 1 ? cardData.length - 2 : prev + 1
     );
   };
 
   const handlePrev = () => {
     setCurrentIndex((prev) => 
-      prev - cardsPerPage < 0 ? Math.max(0, cardData.length - cardsPerPage) : prev - cardsPerPage
+      prev - 1 < 0 ? 0 : prev - 1
     );
   };
-
-  const visibleCards = cardData.slice(currentIndex, currentIndex + cardsPerPage);
 
   return (
     <div className={classes.services}>
@@ -67,38 +72,42 @@ const Unmemoservice= () => {
                 disabled={currentIndex === 0}
               >
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18 5L8 15.5C11.3333 19 18 26 18 26" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18 5L8 15.5C11.3333 19 18 26 18 26" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-
               </button>
               <button 
                 onClick={handleNext} 
                 className={classes.navButton}
-                disabled={currentIndex + cardsPerPage >= cardData.length}
+                disabled={currentIndex >= cardData.length - 2}
               >
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14 5L24 15.5C20.6667 19 14 26 14 26" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14 5L24 15.5C20.6667 19 14 26 14 26" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-
               </button>
             </div>
-            
           </div>
         </div>
         
-        {visibleCards.map((card, index) => (
-          <div className="col-lg-4" key={currentIndex + index}>
-            <Card 
-              image={card.image} 
-              title={card.title} 
-              description={card.description} 
-            />
-          </div>
-        ))}
+        {/* First card slot */}
+        <div className="col-lg-4">
+          <Card 
+            image={cardData[currentIndex].image} 
+            title={cardData[currentIndex].title} 
+            description={cardData[currentIndex].description} 
+          />
+        </div>
+        
+        {/* Second card slot */}
+        <div className="col-lg-4">
+          <Card 
+            image={cardData[currentIndex + 1].image} 
+            title={cardData[currentIndex + 1].title} 
+            description={cardData[currentIndex + 1].description} 
+          />
+        </div>
       </div>
     </div>
   );
-  
 };
 
 export const Service = memo(Unmemoservice);
