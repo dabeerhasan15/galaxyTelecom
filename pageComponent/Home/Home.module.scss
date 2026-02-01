@@ -1,6 +1,11 @@
 .picture{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 100px;
-    padding-bottom: 100px;
+    position: absolute;
+
 }
 
 .productivity{
@@ -205,6 +210,32 @@ margin-bottom: 32px;
     .image{
         display: flex;
         justify-content: end;
+
+    }
+}
+
+
+
+.service{
+    position: relative;
+    background-image: url("/Homebackgorunds.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px;
+    z-index: 2; 
+    margin-top: 300px;
+    margin-bottom: 200px;
+
+    .image{
+        position: absolute;
+        right: -190;
+        bottom: -150px;
+        z-index: 5; 
+
+    }
+    .content{
+       padding-top: 1;
 
     }
 }

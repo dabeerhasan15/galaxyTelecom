@@ -3,6 +3,7 @@ import { Text } from "@/component/Text";
 import { componentSizes, htmlTag } from "@/types";
 
 import { Benifits } from "@/component/Benifits";
+import { GetfreeConsultancy } from "@/component/GetfreeConsultancy";
 import { Product } from "@/component/Product";
 import Spline from "@splinetool/react-spline";
 import Image from "next/image";
@@ -25,6 +26,8 @@ export const Home = () => {
           <div className="col-lg-2"></div>
         </div>
 
+   
+
         <div className="row">
           <div className="col-lg-3"></div>
           <div className="col-lg-6">
@@ -37,14 +40,42 @@ export const Home = () => {
 
         <div className="row">
             <div className="col-lg-1"></div>
-            <div className="col-lg-10"><div className={classes.picture}>
-            <div style={{ width: '100%', height: '800px' }}>
-      <Spline scene="https://prod.spline.design/jN1JmdBfGBRTtV6o/scene.splinecode" />
-    </div>
-
-            </div> </div>
+            <div className="col-lg-10">
+              <div className={classes.picture}>
+                <div style={{ width: '49%', height: '650px' }}>
+                  <Spline scene="https://prod.spline.design/jN1JmdBfGBRTtV6o/scene.splinecode" />
+                  </div>
+                </div> 
+              </div>
             <div className="col-lg-1"></div>
         </div>
+
+
+      <div className={classes.service}>
+      <div className="row">
+
+        <div className="col-lg-4">
+          <div className={classes.image}>
+            <Image
+              src="/Homebgcloud.png"
+              alt="Galaxy Telecom Logo"
+              width={811}
+              height={728}
+            />
+          </div>
+        </div>
+        <div className="col-lg-7">
+          <div className={classes.content}>
+            <GetfreeConsultancy/>
+          </div>
+        </div>
+        <div className="col-lg-1"></div>
+      </div>
+      </div>
+
+
+
+        
 
         <div className="row">
             <div className="col-lg-1"></div>
