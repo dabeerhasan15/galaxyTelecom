@@ -1,0 +1,40 @@
+.centerColumn {
+  display: flex;
+  align-items: center;
+}
+
+.imageFirst {
+  border-right: 1px solid #474747;
+  border-left: 1px solid #474747;
+  padding: 120px 0 100px;
+}
+
+.imageSecond {
+  border-right: 1px solid #474747;
+  border-left: 1px solid #474747;
+  padding: 100px 0 120px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 280px;
+}
+
+.textDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .title {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 130%;
+    color: #0a0908;
+  }
+
+  .description {
+    margin: 0;
+  }
+}

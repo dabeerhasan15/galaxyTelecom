@@ -1,27 +1,35 @@
-.Benefits{
+.Benefits {
   display: flex;
   flex-direction: column;
   gap: 32px;
   align-items: center;
+  margin-bottom: 80px;
 
-  .provideTechnical{
-      font-weight: 400;
-      font-size: 56px;
-      line-height: 130%;
-      text-align: center;
-      text-transform: capitalize;
-      color: #0A0908;
+  .provideTechnical {
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #0a0908;
   }
 }
 
-.upperleft{
+.benefitCards {
+  padding-top: 0;
+}
+
+.benefitCard {
   padding-bottom: 70px;
   padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 
-  .heading{
+  .heading {
     font-weight: 400;
     font-size: 32px;
     line-height: 130%;
-    color: #0A0908;
+    color: #0a0908;
   }
 }

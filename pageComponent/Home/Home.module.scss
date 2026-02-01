@@ -1,287 +1,157 @@
-.picture{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 100px;
+@use "@/sass/variables" as *;
+
+/* Hero */
+.hero {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.picture {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  position: absolute;
+}
+
+.splineContainer {
+  width: 50%;
+  height: 650px;
+
+  canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+/* Vision */
+.visionSection {
+  padding-top: var(--section-padding-y);
+  padding-bottom: var(--section-padding-y);
+}
+
+.productivity {
+  background: #2996a2;
+  border-radius: 100px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  line-height: 100%;
+  padding: 10px 30px;
+}
+
+.future {
+  color: rgba(10, 9, 8, 0.3);
+}
+
+/* Get free consultancy / Service block - background set via inline style from config */
+.service {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: var(--section-padding-y-lg);
+  padding-bottom: var(--section-padding-y-lg);
+  z-index: 2;
+  margin-top: 200px;
+  margin-bottom: var(--section-padding-y-lg);
+
+  .image {
     position: absolute;
+    right: -190px;
+    bottom: -150px;
+    z-index: 5;
+  }
 
+  .content {
+    padding-top: 0;
+  }
 }
 
-.splineContainer{
-    width: 50%;
-    height: 650px;
-    
-    canvas {
-        width: 100% !important;
-        height: 100% !important;
-    }
+/* Membership & Accreditation */
+.membershipAccreditation {
+  background: #f8f8f8;
+  padding-top: var(--section-padding-y);
+  padding-bottom: var(--section-padding-y);
+
+  .membershipHeader {
+    margin-bottom: 48px;
+  }
 }
 
-.productivity{
-
-background: #2996A2;
-border-radius: 100px;
-color: white;
-justify-content: center;
-align-items: center;
-line-height: 100%;
-width: 506px;
-height: 103px;
-padding-left: 30px;
-padding-right: 30px;
-padding-bottom: 10px;
-
+/* What we offer - layout handled by OfferBlock */
+.whatWeOffer {
+  padding-bottom: var(--section-padding-y);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
-.future{
-    color: rgba(10, 9, 8, 0.3);}
+/* Ethics */
+.ethics {
+  padding-top: var(--section-padding-y-lg);
+  padding-bottom: var(--section-padding-y-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
 
+  .valueofcode {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 130%;
+    color: #0a0908;
+  }
 
-.MembershipAccreditation{
-background: #F8F8F8;
-border-radius: 0px;
-width: full;
-padding-top: 120px;
-padding-bottom: 120px;
+  .ethicsContent {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    text-align: center;
+    color: rgba(15, 15, 14, 0.3);
 
-.membershipDetail{
-    padding-top: 24px;
-    padding-bottom: 24px;
-   
-    border-right: 1px solid #474747;
-
-    .registeredCompany{
-        
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 140%;
-        color: #444444;}
-
-        .companyId{
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 140%;
-        color: #444444;
-        }
-
-        .images{
-            height: 49;
-        }
-
-        }
-
-        .membershipDetails{
-            padding-top: 24px;
-            padding-bottom: 24px;
-            
-            
-        
-            .registeredCompany{
-                
-                font-weight: 400;
-                font-size: 24px;
-                line-height: 140%;
-                color: #444444;}
-        
-                .companyId{
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 140%;
-                color: #444444;
-                }
-
-                .images{
-                    height: 49;
-                }
-                
-                }
-
+    .black {
+      color: rgba(15, 15, 14, 1);
     }
 
-
-    // whatWeOffer
-
-.whatWeOffer{
-        padding-bottom: 120px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .image{
-            border-right: 1px solid #474747;
-            border-left: 1px solid #474747;
-            padding-top: 120px;
-            padding-bottom: 100px;
-        }
-        .images{
-            border-right: 1px solid #474747;
-            border-left: 1px solid #474747;
-            padding-top: 100px;
-            padding-bottom: 120px;
-        }
-
-        .centerColumn {
-            display: flex;
-            align-items: center;
-              
-        }
-
-        .textDetail{
-            
-            .weOffer{
-                font-weight: 400;
-                font-size: 64px;
-                line-height: 130%;
-                color: #0A0908;
-            }
-            .learnmore{
-                display: flex;
-                gap: 10px;
-                align-items: center;
-            }
-        }        
-}
-
-.Ethics{
-    padding-top: 200px;
-    padding-bottom: 200px;
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
-
-        .valueofcode{
-            font-weight: 400;
-            font-size: 64px;
-            line-height: 130%;
-            color: #0A0908;
+    .grey {
+      color: rgba(15, 15, 14, 0.6);
     }
-    .imageSection{
-        display: flex;
-        gap: 32px;
-
-    }
-
-    .ethicsContent{
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 150%;
-        text-align: center;
-        color: rgba(15, 15, 14, 0.3); 
-
-        .black{
-            color: rgba(15, 15, 14, 1);
-        }
-
-        .grey{
-            color: rgba(15, 15, 14, 0.6);
-        }
+  }
 }
 
+/* Services */
+.services {
+  padding-bottom: var(--section-padding-y-lg);
 }
 
-.services{
-    padding-bottom: 240px;
+/* Benefits & Product */
+.benefitsSection {
+  padding-bottom: var(--section-padding-y-lg);
 }
 
+/* Features */
+.featureSection {
+  position: relative;
+  padding-top: 100px;
 
-.Benefits{
-    padding-bottom: 240px;
-    
+  .featureText {
+    position: absolute;
+    bottom: 0;
+    margin-right: 60px;
+    margin-bottom: 20px;
 
-}
-    
-
-.card{
-    padding: 40px;
-background: #F8F8F8;
-border: 1px solid #E0E0E0;
-border-radius: 24px;
-margin-bottom: 32px;
-  
-    .heading{
+    .text {
       font-weight: 400;
-      font-size: 32px;
-      line-height: 130%;
-      color: #0A0908;
+      font-size: 44px;
+      line-height: 110%;
+      text-transform: capitalize;
+      color: #0a0908;
     }
   }
 
-.featureSection{
-    position: relative;
-    padding-top: 100px;
-
-    .featureText{
-        position: absolute;
-        bottom: 0;
-        margin-right:60px;
-        margin-bottom: 20px;
-
-        .text{
-            font-weight: 400;
-            font-size: 44px;
-            line-height: 110%;
-            text-transform: capitalize;
-            color: #0A0908;
-
-        }
-        
-}
-
-    .image{
-        display: flex;
-        justify-content: end;
-
-    }
-}
-
-
-
-.service{
-    position: relative;
-    background-image: url("/Homebackgorunds.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 200px;
-    z-index: 2; 
-    margin-top: 300px;
-    margin-bottom: 200px;
-
-    .image{
-        position: absolute;
-        right: -190;
-        bottom: -150px;
-        z-index: 5; 
-
-    }
-    .content{
-       padding-top: 1;
-
-    }
-}
-
-
-.serviceText{
+  .image {
     display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding-top: 40px;
-
-    .heading{
-font-weight: 400;
-font-size: 48px;
-line-height: 130%;
-text-transform: capitalize;
-color: #0A0908;
-    }
-
-    .text{
-font-weight: 300;
-font-size: 24px;
-line-height: 140%;
-text-transform: capitalize;
-color: #0A0908;
-    }
-
+    justify-content: flex-end;
+  }
 }

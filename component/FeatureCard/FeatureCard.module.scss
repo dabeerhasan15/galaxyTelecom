@@ -1,0 +1,17 @@
+.card {
+  padding: 40px;
+  background: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 24px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .heading {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130%;
+    color: #0a0908;
+  }
+}
