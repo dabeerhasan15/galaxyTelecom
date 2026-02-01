@@ -1,0 +1,57 @@
+.serviceText {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 40px;
+}
+
+.serviceText .heading {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 130%;
+  text-transform: capitalize;
+  color: #0A0908;
+}
+
+.serviceText .text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: #0A0908;
+}
+
+.navigationButtons {
+  display: flex;
+  gap: 24px;
+  margin-top: 180px;
+}
+
+.navButton {
+  padding: 12px;
+  background-color: #0A0908;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navButton:hover:not(:disabled) {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+.navButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.pageIndicator {
+  font-size: 18px;
+  color: #0A0908;
+  font-weight: 400;
+}

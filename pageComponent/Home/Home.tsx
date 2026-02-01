@@ -3,9 +3,9 @@ import { Text } from "@/component/Text";
 import { componentSizes, htmlTag } from "@/types";
 
 import { Benifits } from "@/component/Benifits";
-import { Card } from "@/component/Card";
 import { GetfreeConsultancy } from "@/component/GetfreeConsultancy";
 import { Product } from "@/component/Product";
+import { Service } from "@/component/Service";
 import Spline from "@splinetool/react-spline";
 import Image from "next/image";
 import Link from "next/link";
@@ -278,26 +278,18 @@ export const Home = () => {
 
 
     {/* our service */}
-  <div className={classes.services}>
+  
+
+    <div className={classes.services}>
     <div className="row">
-      <div className="col-lg-1"></div>
-      <div className="col-lg-3">
-        <div className={classes.serviceText}>
-          <div className={classes.heading}>Our Services</div>
-          <div className={classes.text}>
-          We help develop network infrastructure by providing a complete solution from Hardware to service deliverable.
-          </div>
-        </div>
-        </div>
-        <div className="col-lg-4">
-        <Card image="/servicecard1.png" title="Satellite Network service" description="Galaxy Telecom with its strong global network offers a complete satellite network solution inclusive of space segment and ground equipment. "/>
-      </div>
-      <div className="col-lg-4">
-        <Card image="/servicecard1.png" title="Satellite Network service" description="Galaxy Telecom with its strong global network offers a complete satellite network solution inclusive of space segment and ground equipment. "/>
-      </div>
+      
+        <Service/>
+      
       </div>
      
     </div>
+
+
 
 
 
