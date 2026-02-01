@@ -3,6 +3,7 @@ import { Text } from "@/component/Text";
 import { componentSizes, htmlTag } from "@/types";
 
 import { Benifits } from "@/component/Benifits";
+import { Card } from "@/component/Card";
 import { GetfreeConsultancy } from "@/component/GetfreeConsultancy";
 import { Product } from "@/component/Product";
 import Spline from "@splinetool/react-spline";
@@ -42,7 +43,7 @@ export const Home = () => {
             <div className="col-lg-1"></div>
             <div className="col-lg-10">
               <div className={classes.picture}>
-                <div style={{ width: '49%', height: '650px' }}>
+                <div className={classes.splineContainer}>
                   <Spline scene="https://prod.spline.design/jN1JmdBfGBRTtV6o/scene.splinecode" />
                   </div>
                 </div> 
@@ -182,8 +183,8 @@ export const Home = () => {
   <div className={classes.whatWeOffer}>
   <div className="row">
     <div className="col-lg-1"></div>
-    <div className="col-lg-4">
-    <Image  src="/weOffer1.png" alt="membership"  width={544} height={437} />
+    <div className="col-lg-4"> 
+      <Image  className={classes.image} src="/weOffer1.png" alt="membership"  width={544} height={437} />
     </div> 
     <div className="col-lg-1">
     </div>
@@ -210,7 +211,7 @@ export const Home = () => {
   <div className="row ">
     <div className="col-lg-1"></div>
     <div className="col-lg-4">
-    <Image  src="/weOffer2.png" alt="membership"  width={544} height={437} />
+    <Image className={classes.images} src="/weOffer2.png" alt="membership"  width={544} height={437} />
     </div> 
     <div className="col-lg-1">
     </div>
@@ -274,10 +275,31 @@ export const Home = () => {
     </div>
   </div>
 
+
+
     {/* our service */}
   <div className={classes.services}>
-    ss
-  </div>
+    <div className="row">
+      <div className="col-lg-1"></div>
+      <div className="col-lg-3">
+        <div className={classes.serviceText}>
+          <div className={classes.heading}>Our Services</div>
+          <div className={classes.text}>
+          We help develop network infrastructure by providing a complete solution from Hardware to service deliverable.
+          </div>
+        </div>
+        </div>
+        <div className="col-lg-4">
+        <Card image="/servicecard1.png" title="Satellite Network service" description="Galaxy Telecom with its strong global network offers a complete satellite network solution inclusive of space segment and ground equipment. "/>
+      </div>
+      <div className="col-lg-4">
+        <Card image="/servicecard1.png" title="Satellite Network service" description="Galaxy Telecom with its strong global network offers a complete satellite network solution inclusive of space segment and ground equipment. "/>
+      </div>
+      </div>
+     
+    </div>
+
+
 
   <div className={classes.Benefits}>
   <Benifits/>

@@ -8,6 +8,16 @@
 
 }
 
+.splineContainer{
+    width: 50%;
+    height: 650px;
+    
+    canvas {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
 .productivity{
 
 background: #2996A2;
@@ -93,12 +103,23 @@ padding-bottom: 120px;
     // whatWeOffer
 
 .whatWeOffer{
-        padding-top: 120px;
         padding-bottom: 120px;
         display: flex;
         flex-direction: column;
-        gap: 200px;
         align-items: center;
+
+        .image{
+            border-right: 1px solid #474747;
+            border-left: 1px solid #474747;
+            padding-top: 120px;
+            padding-bottom: 100px;
+        }
+        .images{
+            border-right: 1px solid #474747;
+            border-left: 1px solid #474747;
+            padding-top: 100px;
+            padding-bottom: 120px;
+        }
 
         .centerColumn {
             display: flex;
@@ -238,4 +259,29 @@ margin-bottom: 32px;
        padding-top: 1;
 
     }
+}
+
+
+.serviceText{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 40px;
+
+    .heading{
+font-weight: 400;
+font-size: 48px;
+line-height: 130%;
+text-transform: capitalize;
+color: #0A0908;
+    }
+
+    .text{
+font-weight: 300;
+font-size: 24px;
+line-height: 140%;
+text-transform: capitalize;
+color: #0A0908;
+    }
+
 }
