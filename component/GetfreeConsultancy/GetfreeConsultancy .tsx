@@ -1,5 +1,6 @@
 "use client";
 
+import { images } from "@/config";
 import { componentSizes } from "@/types";
 import Image from "next/image";
 import { memo } from "react";
@@ -25,7 +26,7 @@ const UnmemoGetfreeConsultancy  =  () => {
               <div className={classes.image}>
                 <div className={classes.imageWrapper}>
                   <Image
-                    src="/consultants.png"
+                    src={images.consultants}
                     alt="Galaxy Telecom Logo"
                     width={279}
                     height={266}

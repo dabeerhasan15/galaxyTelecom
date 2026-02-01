@@ -3,6 +3,7 @@ import { Card } from "@/component/Card";
 import { GetfreeConsultancy } from "@/component/GetfreeConsultancy";
 import { HeroSection } from "@/component/HeroSection";
 import { Space } from "@/component/Space";
+import { images } from "@/config";
 import { componentSizes } from "@/types";
 import Image from "next/image";
 import classes from "./ServicePage.module.scss";
@@ -14,13 +15,16 @@ export const ServicePage = () => {
     <HeroSection tag="Our Services" description="by providing a complete solution from Hardware to service deliverable. Creating solutions that deliver highly secure & ultra-reliable communications to accelerate the emergence of digital transformations." title="We help develop network infrastructure"/>
 
     <div className="container">
-      <div className={classes.service}>
+      <div
+        className={classes.service}
+        style={{ backgroundImage: `url(${images.service.background})` }}
+      >
       <div className="row">
         <div className="col-lg-5 ">
           <div className={classes.image}>
             <Image
-              src="/service1.png"
-              alt="Galaxy Telecom Logo"
+              src={images.service.hero}
+              alt="Galaxy Telecom"
               width={485}
               height={432}
             />
@@ -54,9 +58,9 @@ export const ServicePage = () => {
 
     <div className="container">
       <div className="row">
-        <div className="col-lg-4"><Card description="Galaxy Telecom with its strong global network offers a complete satellite network solution inclusive of space segment and ground equipment. " image="/servicecard1.png" title="Satellite Network service"/></div>
-        <div className="col-lg-4"><Card description="Galaxy Telecom provides a broad range of IOT solutions. We will help you build and optimize your IoT network efficiently." image="/servicecard2.png" title="IOT (Internet of Things) Solutions"/></div>
-        <div className="col-lg-4"><Card description="Galaxy Telecom helps Telecom Operators to design and implement a robust cellular backhaul solution combining Satellite & Fiber connectivity." image="/servicecard3.png" title="Cellular Backhaul Solution"/></div>
+        <div className="col-lg-4"><Card description="Galaxy Telecom with its strong global network offers a complete satellite network solution inclusive of space segment and ground equipment. " image={images.service.card1} title="Satellite Network service"/></div>
+        <div className="col-lg-4"><Card description="Galaxy Telecom provides a broad range of IOT solutions. We will help you build and optimize your IoT network efficiently." image={images.service.card2} title="IOT (Internet of Things) Solutions"/></div>
+        <div className="col-lg-4"><Card description="Galaxy Telecom helps Telecom Operators to design and implement a robust cellular backhaul solution combining Satellite & Fiber connectivity." image={images.service.card3} title="Cellular Backhaul Solution"/></div>
       </div>
     </div>
 

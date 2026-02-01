@@ -1,5 +1,6 @@
 "use client";
 
+import { images } from "@/config";
 import { componentSizes } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
@@ -29,7 +30,7 @@ export const Header = () => {
             <div className={styles.logoContainer}>
               <div className={styles.logoWrapper}>
                 <Image
-                  src="/Logo.png"
+                  src={images.logo}
                   alt="Galaxy Telecom Logo"
                   width={240}
                   height={66}

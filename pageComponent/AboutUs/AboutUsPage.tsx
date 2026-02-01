@@ -1,25 +1,27 @@
 import { GetfreeConsultancy } from "@/component/GetfreeConsultancy";
 import { HeroSection } from "@/component/HeroSection";
 import { Space } from "@/component/Space";
+import { images } from "@/config";
 import { componentSizes } from "@/types";
 import Image from "next/image";
 import classes from "./AboutUs.module.scss";
 
 export const AboutUs = () => {
-
   return (
     <>
         <HeroSection tag="About" title="Galaxy Telecom" description="A specialized company providing Telecom hardware and Service solutions in the MENA region. Through a combination of our products and services, we can enhance your productivity and secure the future of your telecom operation." />
 
-
     <div className="container">
-      <div className={classes.service}>
+      <div
+        className={classes.service}
+        style={{ backgroundImage: `url(${images.about.background})` }}
+      >
       <div className="row">
         <div className="col-lg-4">
           <div className={classes.image}>
             <Image
-              src="/about11.png"
-              alt="Galaxy Telecom Logo"
+              src={images.about.hero}
+              alt="Galaxy Telecom"
               width={433}
               height={810}
             />
@@ -41,8 +43,8 @@ export const AboutUs = () => {
           <div className="col-lg-5">
             <div className={classes.image}>
             <Image
-                src="/aboutcard1.png"
-                alt="Galaxy Telecom Logo"
+                src={images.about.card1}
+                alt="Galaxy Telecom"
                 width={648}
                 height={619}
               />
@@ -85,8 +87,8 @@ export const AboutUs = () => {
           <div className="col-lg-5">
             <div className={classes.images}>
             <Image
-                src="/aboutcard2.png"
-                alt="Galaxy Telecom Logo"
+                src={images.about.card2}
+                alt="Galaxy Telecom"
                 width={648}
                 height={619}
               />

@@ -1,41 +1,42 @@
 
 "use client";
 
+import { images } from "@/config";
 import { memo, useState } from "react";
 import { Card } from "../Card";
 import classes from "./Service.module.scss";
 
 const cardData = [
   {
-    image: "/servicecard1.png",
+    image: images.service.card1,
     title: "Satellite Network service",
     description: "Galaxy Telecom with its strong global network offers a complete satellite network solution inclusive of space segment and ground equipment."
   },
   {
-    image: "/servicecard2.png",
+    image: images.service.card2,
     title: "IOT (Internet of Things) Solutions",
     description: "Galaxy Telecom provides a broad range of IOT solutions. We will help you build and optimize your IoT network efficiently."
   },
   {
-    image: "/servicecard3.png",
+    image: images.service.card3,
     title: "Cellular Backhaul Solution",
     description: "Galaxy Telecom helps Telecom Operators to design and implement a robust cellular backhaul solution combining Satellite & Fiber connectivity."
   },
   {
-    image: "/servicecard1.png",
+    image: images.service.card1,
     title: "Satellite Network service",
     description: "Galaxy Telecom with its strong global network offers a complete satellite network solution inclusive of space segment and ground equipment."
   },
   {
-    image: "/servicecard2.png",
+    image: images.service.card2,
     title: "IOT (Internet of Things) Solutions",
     description: "Galaxy Telecom provides a broad range of IOT solutions. We will help you build and optimize your IoT network efficiently."
   },
   {
-    image: "/servicecard3.png",
+    image: images.service.card3,
     title: "Cellular Backhaul Solution",
     description: "Galaxy Telecom helps Telecom Operators to design and implement a robust cellular backhaul solution combining Satellite & Fiber connectivity."
-  } 
+  }
 ];
 
 const Unmemoservice = () => {

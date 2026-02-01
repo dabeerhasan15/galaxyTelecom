@@ -1,3 +1,4 @@
+import { images } from "@/config";
 import { componentSizes } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,11 +9,11 @@ export const Footer = () => {
   return (
     <footer className={classes.footer}>
       <div className={classes.decorRight}>
-        <Image src="/footer-right.svg" alt="footer" width={126} height={319} />
+        <Image src={images.footer.right} alt="footer" width={126} height={319} />
       </div>
 
       <div className={classes.decorLeft}>
-        <Image src="/footer-left.svg" alt="footer" width={494} height={707} />
+        <Image src={images.footer.left} alt="footer" width={494} height={707} />
       </div>
 
       <div className={classes.outer}>
