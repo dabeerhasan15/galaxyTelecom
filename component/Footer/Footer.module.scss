@@ -65,7 +65,102 @@
 }
 
 .brand {
-  font-size: 250px;
+  font-size: 14rem;
   line-height: 1;
+}
+
+
+
+.Text{
+font-weight: 400;
+font-size: 15.8px;
+line-height: 18px;
+letter-spacing: -0.32px;
+color: #FFFFFF;
+}
+
+.email{
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(12.5px);
+border-radius: 8px;
+
+font-weight: 400;
+font-size: 16px;
+line-height: 12px;
+letter-spacing: 1.2px;
+text-transform: uppercase;
+color: #FFFFFF;
+opacity: 0.5;
+}
+
+.signup{
+
+background: #F5F5F5;
+border-radius: 8px;
+font-weight: 600;
+font-size: 15px;
+line-height: 20px;
+text-align: center;
+padding: 14px 0;
+color: #181818;
+
+}
+
+.input{
+  background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(12.5px);
+border-radius: 8px;
+width: 100%;
+font-weight: 400;
+font-size: 16px;
+line-height: 12px;
+letter-spacing: 1.2px;
+text-transform: uppercase;
+color: #FFFFFF;
+opacity: 0.5;
+padding: 12px 20px;
+
+    &:focus {
+      outline: none;
+      border-color: #2996A2;
+    }
+
+    &::placeholder {
+      color: #9ca3af;
+    }
+  
+}
+
+.navigation{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  .field{
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+color: #FFFFFF;
+  }
+
+  .fields{
+font-weight: 400;
+font-size: 20px;
+line-height: 18px;
+
+color: #FFFFFF;
+  }
+}
+
+
+.flex{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.contactUs{
+  display: flex;
+  gap: 48px;
 }
 
