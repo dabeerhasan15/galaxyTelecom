@@ -78,6 +78,7 @@ export const Home = () => {
 
         
 
+        <div className={classes.vision}>
         <div className="row">
             <div className="col-lg-1"></div>
             <div className="col-lg-10">
@@ -87,16 +88,7 @@ export const Home = () => {
             </div>
             <div className="col-lg-1"></div>
         </div>
-        <Space size={componentSizes.large}/>
-        <Space size={componentSizes.large}/>
-        <Space size={componentSizes.large}/>
-        <Space size={componentSizes.large}/>
-        <Space size={componentSizes.large}/>
-        <Space size={componentSizes.large}/>
-        <Space size={componentSizes.large}/>
-        <Space size={componentSizes.large}/>
-        <Space size={componentSizes.large}/>
-        <Space size={componentSizes.large}/>
+        </div>
       </div>
 
 <div className={classes.MembershipAccreditation}>
@@ -302,6 +294,7 @@ export const Home = () => {
   </div>
   
     {/* Feature */}
+    <div className={classes.featureSection}>
     <div className="row">
       <div className="col-lg-1"></div>
       <div className="col-lg-10">
@@ -387,17 +380,7 @@ export const Home = () => {
       </div>
       <div className="col-lg-1"></div>
     </div>
-
-      <Space size={componentSizes.large}/>
-      <Space size={componentSizes.large}/>
-      <Space size={componentSizes.large}/>
-      <Space size={componentSizes.large}/>
-      <Space size={componentSizes.large}/>
-      <Space size={componentSizes.large}/>
-      <Space size={componentSizes.large}/>
-      <Space size={componentSizes.large}/>
-      <Space size={componentSizes.large}/>
-      <Space size={componentSizes.large}/>
+    </div>
 </div>
 
 </>
