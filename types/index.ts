@@ -50,8 +50,4 @@ export const viewType = {
 
 export type ViewType = (typeof viewType)[keyof typeof viewType];
 
-export * from "./Freelancer";
-export * from "./job";
-export * from "./Login";
-export * from "./ProfileAvatar";
 
