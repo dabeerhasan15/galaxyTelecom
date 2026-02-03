@@ -12,15 +12,21 @@
     text-transform: capitalize;
     color: #0a0908;
   }
-}
 
-.upperleft {
-  padding: 60px;
-  .heading {
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 130%;
-    color: #0a0908;
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .provideTechnical {
+      font-size: 40px;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .provideTechnical {
+      font-size: 28px;
+      line-height: 140%;
+      padding: 0 12px;
+    }
   }
 }
 
@@ -57,3 +63,47 @@
     }
   }
 }
+
+.upperleft {
+  padding: 60px;
+
+  .heading {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130%;
+    color: #0a0908;
+  }
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    padding: 40px;
+
+    .heading {
+      font-size: 26px;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    padding: 24px;
+    text-align: center;
+
+    img {
+      margin: 0 auto;
+    }
+
+    .heading {
+      font-size: 22px;
+    }
+  }
+
+  /* Small mobile */
+  @media (max-width: 480px) {
+    padding: 16px;
+
+    .heading {
+      font-size: 20px;
+    }
+  }
+}
+

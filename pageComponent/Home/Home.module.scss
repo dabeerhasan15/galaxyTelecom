@@ -18,21 +18,31 @@
     }
 }
 
-.productivity{
+.productivity {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  
+    background: #2996A2;
+    color: #fff;
+    border-radius: 100px;
+  
+    font-size: clamp(1.8rem, 6vw, 70px);
+    line-height: 100%;
+  
+    height: auto;
+    padding: clamp(8px, 1.5vw, 10px) clamp(16px, 3vw, 30px);
 
-background: #2996A2;
-border-radius: 100px;
-color: white;
-justify-content: center;
-align-items: center;
-line-height: 100%;
-font-size: 70px;
-height: 103px;
-padding-left: 30px;
-padding-right: 30px;
-padding-bottom: 10px;
-
-}
+    @media (max-width: 480px) {
+        .productivity {
+          font-size: 1.6rem;
+          padding: 8px 16px;
+          border-radius: 40px;
+        }
+      }
+      
+  }
+  
 
 .future{
     color: rgba(10, 9, 8, 0.3);}
@@ -238,30 +248,152 @@ margin-bottom: 32px;
 
 
 
-.service{
+// .service{
+//     position: relative;
+//     background-image: url("/Homebackgorunds.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     padding-top: 200px;
+//     z-index: 2; 
+//     margin-top: 300px;
+//     margin-bottom: 200px;
+
+//     .image{
+//         position: absolute;
+//         right: -190;
+//         bottom: -150px;
+//         z-index: 5; 
+
+//     }
+//     .content{
+//        padding-top: 1;
+
+//     }
+// }
+
+
+.service {
     position: relative;
     background-image: url("/Homebackgorunds.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding-top: 200px;
-    z-index: 2; 
+    z-index: 2;
     margin-top: 300px;
     margin-bottom: 200px;
-
-    .image{
-        position: absolute;
-        right: -190;
-        bottom: -150px;
-        z-index: 5; 
-
+  
+    .image {
+      position: absolute;
+      right: -190px;
+      bottom: -150px;
+      z-index: 5;
     }
-    .content{
-       padding-top: 1;
-
+  
+    .content {
+      padding-top: 1px;
     }
-}
-
+  
+    // Tablet - start making adjustments
+    @media (max-width: 1024px) {
+      padding-top: 150px;
+      margin-top: 200px;
+      margin-bottom: 150px;
+  
+      .image {
+        right: -100px;
+        bottom: -100px;
+  
+        img {
+          width: 600px !important;
+          height: auto !important;
+        }
+      }
+    }
+  
+    // Small tablet - image becomes relative
+    @media (max-width: 768px) {
+      padding-top: 80px;
+      padding-bottom: 40px;
+      margin-top: 80px;
+      margin-bottom: 80px;
+      overflow: hidden;
+  
+      .image {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+  
+        img {
+          width: 100% !important;
+          max-width: 400px !important;
+          height: auto !important;
+        }
+      }
+  
+      .content {
+        padding-top: 0;
+      }
+    }
+  
+    // Mobile landscape
+    @media (max-width: 576px) {
+      padding-top: 60px;
+      padding-bottom: 30px;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      background-position: center center;
+  
+      .image {
+        padding-top: 30px;
+  
+        img {
+          max-width: 320px !important;
+        }
+      }
+  
+      .content {
+        padding-top: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+  
+    // Mobile portrait
+    @media (max-width: 425px) {
+      padding-top: 40px;
+      padding-bottom: 20px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+  
+      .image {
+        padding-top: 20px;
+  
+        img {
+          max-width: 280px !important;
+        }
+      }
+    }
+  
+    // Extra small devices
+    @media (max-width: 375px) {
+      padding-top: 30px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+  
+      .image {
+        img {
+          max-width: 240px !important;
+        }
+      }
+    }
+  }
 
 .serviceText{
     display: flex;
