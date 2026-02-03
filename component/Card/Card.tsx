@@ -2,7 +2,6 @@
 
 import { componentSizes } from "@/types";
 import Image from "next/image";
-import Link from "next/link";
 import { FC, memo } from "react";
 import { Space } from "../Space";
 import { Text } from "../Text";
@@ -34,12 +33,12 @@ const Unmemocard : FC<Props> = ({ image, title, description }) => {
         <div className={classes.content}>{description}</div>
         <Space size={componentSizes.regular}/>
         <Space size={componentSizes.regular}/>
-        <Link href={'/'} className={classes.learnmore}>
+        <button  className={classes.learnmore}>
           <Text size={componentSizes.medium}>Learn More </Text>
           <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 9.5H25M25 9.5L16.5 1M25 9.5L16.5 18" stroke="#0A0908" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
-        </Link>
+        </button>
       </div>
   )
   

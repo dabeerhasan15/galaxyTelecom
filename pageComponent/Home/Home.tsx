@@ -8,7 +8,6 @@ import { Product } from "@/component/Product";
 import { Service } from "@/component/Service";
 import Spline from "@splinetool/react-spline";
 import Image from "next/image";
-import Link from "next/link";
 import classes from "./Home.module.scss";
 
 export const Home = () => {
@@ -189,12 +188,12 @@ export const Home = () => {
         <Space size={componentSizes.small}/>
         <Space size={componentSizes.large}/>
         <Space size={componentSizes.large}/>
-        <Link href={'/'} className={classes.learnmore}>
+        <button  className={classes.learnmore}>
           <Text size={componentSizes.medium}>Learn More </Text>
           <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 9.5H25M25 9.5L16.5 1M25 9.5L16.5 18" stroke="#0A0908" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
-        </Link>
+        </button>
       </div>
     </div>
     <div className="col-lg-1"></div>
@@ -216,12 +215,12 @@ export const Home = () => {
         <Space size={componentSizes.small}/>
         <Space size={componentSizes.large}/>
         <Space size={componentSizes.large}/>
-        <Link href={'/'} className={classes.learnmore}>
+        <button className={classes.learnmore}>
           <Text size={componentSizes.medium}>Learn More </Text>
           <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 9.5H25M25 9.5L16.5 1M25 9.5L16.5 18" stroke="#0A0908"   strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
-        </Link>
+        </button>
       </div>
     </div>
     <div className="col-lg-1"></div>
