@@ -7,7 +7,7 @@ import classes from "./Service.module.scss";
 
 const cardData = [
   {
-    image: "/servicecard1.png",
+    image: "/serviceCard1.png",
     title: "Satellite Network service",
     description: "Galaxy Telecom with its strong global network offers a complete satellite network solution inclusive of space segment and ground equipment."
   },

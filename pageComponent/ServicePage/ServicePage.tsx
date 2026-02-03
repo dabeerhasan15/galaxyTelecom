@@ -54,7 +54,7 @@ export const ServicePage = () => {
 
     <div className="container">
       <div className="row">
-        <div className="col-lg-4"><Card description="Galaxy Telecom with its strong global network offers a complete satellite network solution inclusive of space segment and ground equipment. " image="/servicecard1.png" title="Satellite Network service"/></div>
+        <div className="col-lg-4"><Card description="Galaxy Telecom with its strong global network offers a complete satellite network solution inclusive of space segment and ground equipment. " image="/serviceCard1.png" title="Satellite Network service"/></div>
         <div className="col-lg-4"><Card description="Galaxy Telecom provides a broad range of IOT solutions. We will help you build and optimize your IoT network efficiently." image="/servicecard2.png" title="IOT (Internet of Things) Solutions"/></div>
         <div className="col-lg-4"><Card description="Galaxy Telecom helps Telecom Operators to design and implement a robust cellular backhaul solution combining Satellite & Fiber connectivity." image="/servicecard3.png" title="Cellular Backhaul Solution"/></div>
       </div>
