@@ -27,6 +27,19 @@
     line-height: 110%;
     letter-spacing: -0.04em;
     color: #1F1F1F;
+
+    @media (max-width: 1024px) {
+      font-size: 3.5rem;
+    }
+  
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+      letter-spacing: -0.02em;
+    }
+  
+    @media (max-width: 480px) {
+      font-size: 2rem;
+    }
   }
 
   &:is(h2) {
