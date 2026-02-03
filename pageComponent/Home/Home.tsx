@@ -303,7 +303,7 @@ export const Home = () => {
               <div className="col-lg-6">
                 <div className={classes.card}>
                   <Image
-                  src="/Logo.png"
+                  src="/available.png"
                   alt="Galaxy Telecom Logo"
                   width={64}
                   height={64}
@@ -319,7 +319,7 @@ export const Home = () => {
               <div className="col-lg-6">
               <div className={classes.card}>
                   <Image
-                  src="/Logo.png"
+                  src="/price.png"
                   alt="Galaxy Telecom Logo"
                   width={64}
                   height={64}
@@ -335,7 +335,7 @@ export const Home = () => {
               <div className="col-lg-6">
               <div className={classes.card}>
                   <Image
-                  src="/Logo.png"
+                  src="/Professionalism.png"
                   alt="Galaxy Telecom Logo"
                   width={64}
                   height={64}
@@ -351,7 +351,7 @@ export const Home = () => {
               <div className="col-lg-6">
               <div className={classes.card}>
                   <Image
-                  src="/Logo.png"
+                  src="/product.png"
                   alt="Galaxy Telecom Logo"
                   width={64}
                   height={64}
