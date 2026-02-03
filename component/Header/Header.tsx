@@ -12,6 +12,7 @@ import styles from "./Header.module.scss";
 export const Header = () => {
   const pathname = usePathname();
   const [isContactOpen, setIsContactOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const isActive = (path: string) => {
     if (path === "/") return pathname === "/";
@@ -66,7 +67,10 @@ export const Header = () => {
             </div>
 
             <div className={styles.mobileMenu}>
-              <button className={styles.mobileMenuButton}>
+            <button
+              className={styles.mobileMenuButton}
+              onClick={() => setIsMobileMenuOpen(prev => !prev)}
+            >
                 <svg
                   className={styles.mobileMenuIcon}
                   fill="none"
@@ -85,6 +89,26 @@ export const Header = () => {
           </div>
         </div>
       </header>
+
+      {isMobileMenuOpen && (
+  <div className={styles.mobileDropdown}>
+    <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+    <Link href="/aboutUs" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
+    <Link href="/services" onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
+    <Link href="/product" onClick={() => setIsMobileMenuOpen(false)}>Product</Link>
+
+    <button
+      className={styles.mobileContactButton}
+      onClick={() => {
+        setIsMobileMenuOpen(false);
+        setIsContactOpen(true);
+      }}
+    >
+      Contact Us
+    </button>
+  </div>
+)}
+
 
       {/* Contact Modal */}
       {isContactOpen && (
