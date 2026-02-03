@@ -4,25 +4,52 @@
 }
 
 
-.service{
+
+.service {
     position: relative;
     margin-top: 114px;
     background-image: url("/servicebackground.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 700px; 
-    .image{
-        position: absolute;
-        right: -43;
-        bottom: -50;
-        padding-top: 20px;
+    min-height: 700px;
+  
+    .image {
+      position: absolute;
+      right: -43px;
+      bottom: -50px;
+      padding-top: 20px;
     }
-    .content{
-       padding-top: 500px;
-
+  
+    .content {
+      padding-top: 500px;
     }
-}
+  
+    /* 📱 Mobile Fix */
+    @media (max-width: 768px) {
+      min-height: auto;
+      margin-top: 48px;
+      padding: 24px 0;
+  
+      .image {
+        position: static;
+        margin: 0 auto;
+        padding-top: 0;
+        text-align: center;
+  
+        img {
+          width: 100%;
+          height: auto;
+          max-width: 320px;
+        }
+      }
+  
+      .content {
+        padding-top: 24px;
+      }
+    }
+  }
+  
 
 .serviceText{
     padding-top: 300px;

@@ -1,66 +1,182 @@
-.freeConsultancy{
+
+
+.freeConsultancy {
   width: 100%;
   height: 298px;
   background: linear-gradient(95.54deg, #0A0908 24.39%, #0F2738 63.85%, #11334A 79.78%, #17527B 98.51%);
-  border-radius:0 32px 32px  0;
+  border-radius: 0 32px 32px 0;
   position: relative;
   display: flex;
   justify-content: end;
   padding-top: 48px;
 
-  
+  .content {
+    position: absolute;
+    right: 263px;
 
-
-    
-
-    .content{
-      position: absolute;
-      right: 263px;
-
-      .heading{
-font-weight: 600;
-font-size: 46px;
-line-height: 110%;
-text-transform: capitalize;
-color: #FFFFFF;
-
-      }
-
-      .tag{
-        display: inline-block;
-        padding: 8px 16px;
-        background: #F8F8F8;
-        border: 1px solid #E0E0E0;
-        justify-content: center;
-        align-items: center;
-        padding: 15px 32px;
-        background: #FFFFFF;
-        border-radius: 100px;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 110%;
-        text-align: center;
-        text-transform: capitalize;
-        color: #0A0908;
-  
-  
-      }
-
+    .heading {
+      font-weight: 600;
+      font-size: 46px;
+      line-height: 110%;
+      text-transform: capitalize;
+      color: #FFFFFF;
     }
 
+    .tag {
+      display: inline-block;
+      padding: 15px 32px;
+      background: #FFFFFF;
+      border: 1px solid #E0E0E0;
+      border-radius: 100px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 110%;
+      text-align: center;
+      text-transform: capitalize;
+      color: #0A0908;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: #f0f0f0;
+      }
+    }
+  }
+
+  .image {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .imageWrapper {
+    position: relative; // CRITICAL: Added this
+    border-radius: 30px;
+    overflow: hidden;
+    width: 279px;
+    height: 266px;
+  }
+
+  .img {
+    object-fit: cover;
+  }
+
+  // Tablet breakpoint (iPad and similar)
+  @media (max-width: 1024px) {
+    border-radius: 0 24px 24px 0;
+    height: 250px;
+    padding-top: 32px;
+
+    .content {
+      right: 180px;
+
+      .heading {
+        font-size: 36px;
+      }
+
+      .tag {
+        padding: 12px 24px;
+        font-size: 20px;
+      }
+    }
+
+    .imageWrapper {
+      width: 220px;
+      height: 210px;
+    }
+  }
+
+  // Mobile landscape / Small tablet
+  @media (max-width: 768px) {
+    border-radius: 0 20px 20px 0;
+    height: auto;
+    min-height: 200px;
+    padding: 24px 20px;
+
+    .content {
+      position: relative;
+      right: auto;
+      text-align: left;
+      padding-right: 160px;
+
+      .heading {
+        font-size: 28px;
+        br {
+          display: none;
+        }
+      }
+
+      .tag {
+        padding: 10px 20px;
+        font-size: 18px;
+      }
+    }
 
     .image {
       position: absolute;
       bottom: 0;
+      right: 20px;
     }
-    
+
     .imageWrapper {
-      border-radius: 30px;
-      overflow: hidden;
+      width: 150px;
+      height: 143px;
     }
-    
-    .img {
-      display: block;
-    }
-    
   }
+
+  // Mobile portrait
+  @media (max-width: 576px) {
+    border-radius: 0 16px 16px 0;
+    padding: 20px 16px 16px;
+    min-height: auto;
+
+    .content {
+      padding-right: 0;
+      text-align: center;
+      position: relative;
+      right: auto;
+
+      .heading {
+        font-size: 24px;
+        line-height: 120%;
+      }
+
+      .tag {
+        padding: 8px 16px;
+        font-size: 16px;
+      }
+    }
+
+    .image {
+      position: relative;
+      right: auto;
+      bottom: auto;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .imageWrapper {
+      width: 140px;
+      height: 133px;
+    }
+  }
+
+  // Extra small devices
+  @media (max-width: 375px) {
+    .content {
+      .heading {
+        font-size: 20px;
+      }
+
+      .tag {
+        font-size: 14px;
+        padding: 8px 12px;
+      }
+    }
+
+    .imageWrapper {
+      width: 120px;
+      height: 114px;
+    }
+  }
+}
