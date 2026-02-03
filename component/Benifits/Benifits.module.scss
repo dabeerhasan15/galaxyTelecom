@@ -29,8 +29,9 @@
   &::before,
   &::after {
     content: "";
-    width: 600px;
+    // width: 600px;
     height: 2px;
+    width: min(600px, 90%);
     background: linear-gradient(
       90deg,
       rgba(10, 9, 8, 0) 0%,
@@ -48,5 +49,11 @@
   }
   &::after {
     transform: rotate(90deg);
+  }
+
+  @media (max-width: 768px) {
+    &::after {
+      display: none; // remove vertical line on mobile
+    }
   }
 }
