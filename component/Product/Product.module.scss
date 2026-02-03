@@ -14,10 +14,27 @@ line-height: 150%;
 color: #0F0F0E;
 }
 
+.vectorLine {
+  width: 100%;
+  max-width: 1328px;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(15, 15, 14, 0) 0%,
+    rgba(15, 15, 14, 1) 48%,
+    rgba(15, 15, 14, 0) 100%
+  );
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+
 
 .products{
   padding-bottom: 56px;
-  border-bottom: 1px solid #0F0F0E;
+  // border-bottom: 1px solid #0F0F0E;
   padding-top: 56px
 ;
 .sequence{
