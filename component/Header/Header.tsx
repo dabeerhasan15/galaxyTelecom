@@ -99,8 +99,8 @@ export const Header = () => {
               onClick={() => setIsContactOpen(false)}
             >
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24.9902 6.00638L7.0081 23.9885" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M25 23.9874L7.01787 6.00528" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M24.9902 6.00638L7.0081 23.9885" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M25 23.9874L7.01787 6.00528" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
 
             </button>

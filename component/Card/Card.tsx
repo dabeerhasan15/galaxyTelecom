@@ -37,7 +37,7 @@ const Unmemocard : FC<Props> = ({ image, title, description }) => {
         <Link href={'/'} className={classes.learnmore}>
           <Text size={componentSizes.medium}>Learn More </Text>
           <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 9.5H25M25 9.5L16.5 1M25 9.5L16.5 18" stroke="#0A0908" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M1 9.5H25M25 9.5L16.5 1M25 9.5L16.5 18" stroke="#0A0908" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </Link>
       </div>
