@@ -1,5 +1,6 @@
 "use client";
 
+import { useContactModal } from "@/context/ContactModalContext";
 import { componentSizes } from "@/types";
 import Image from "next/image";
 import { memo } from "react";
@@ -10,6 +11,8 @@ import classes from "./GetfreeConsultancy.module.scss";
 
 
 const UnmemoGetfreeConsultancy  =  () => {
+  const { openContactModal } = useContactModal();
+
   return(
     <div className="container">
         <div className="row">
@@ -19,7 +22,7 @@ const UnmemoGetfreeConsultancy  =  () => {
                 <Space size={componentSizes.large}/>
                 <Space size={componentSizes.medium}/>
                 
-                <div className={classes.tag}>Learn More</div>
+                <button onClick={openContactModal} className={classes.tag}>Learn More</button>
               </div>
 
               <div className={classes.image}>

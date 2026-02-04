@@ -1,5 +1,6 @@
 "use client";
 
+import { useContactModal } from "@/context/ContactModalContext";
 import { componentSizes } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,6 +14,8 @@ export const Header = () => {
   const pathname = usePathname();
   const [isContactOpen, setIsContactOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { openContactModal } = useContactModal();
+
 
   const isActive = (path: string) => {
     if (path === "/") return pathname === "/";
@@ -56,10 +59,19 @@ export const Header = () => {
                 </Link>
               </nav>
 
-              <div className={styles.buttonContainer}>
+              {/* <div className={styles.buttonContainer}>
                 <button 
                   className={styles.contactButton}
                   onClick={() => setIsContactOpen(true)}
+                >
+                  Contact Us
+                </button>
+              </div> */}
+
+<div className={styles.buttonContainer}>
+                <button 
+                  className={styles.contactButton}
+                  onClick={openContactModal}
                 >
                   Contact Us
                 </button>
@@ -97,7 +109,7 @@ export const Header = () => {
     <Link href="/services" onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
     <Link href="/product" onClick={() => setIsMobileMenuOpen(false)}>Product</Link>
 
-    <button
+    {/* <button
       className={styles.mobileContactButton}
       onClick={() => {
         setIsMobileMenuOpen(false);
@@ -105,7 +117,18 @@ export const Header = () => {
       }}
     >
       Contact Us
-    </button>
+    </button> */}
+
+          <button
+            className={styles.mobileContactButton}
+            // onClick={() => {
+            //   setIsMobileMenuOpen(false);
+            //   openContactModal;
+            // }}
+            onClick={openContactModal}
+          >
+            Contact Us
+          </button>
   </div>
 )}
 

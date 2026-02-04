@@ -1,4 +1,6 @@
 import { Footer, Header } from "@/component";
+import { ContactModal } from "@/component/contactModel/ContactModal";
+import { ContactModalProvider } from "@/context/ContactModalContext";
 import "@/sass/index.scss";
 import "./globals.css";
 
@@ -10,9 +12,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+      <ContactModalProvider>
         <Header />
         {children}
+        <ContactModal />
         <Footer />
+        </ContactModalProvider>
       </body>
     </html>
   );
