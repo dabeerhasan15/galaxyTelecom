@@ -95,15 +95,6 @@ export const AboutUs = () => {
         </div>
       </div>
 
-      <Space size={componentSizes.large}/>
-      <Space size={componentSizes.large}/>
-      <Space size={componentSizes.large}/>
-
-      <Space size={componentSizes.large}/>
-      <Space size={componentSizes.large}/>
-      <Space size={componentSizes.large}/><Space size={componentSizes.large}/>
-      <Space size={componentSizes.large}/>
-      <Space size={componentSizes.large}/>
     </div>
 
     
