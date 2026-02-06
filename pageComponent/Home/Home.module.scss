@@ -199,11 +199,20 @@ padding-bottom: 120px;
 
 .services{
     padding-bottom: 240px;
+    @media (max-width: 900px) {
+      padding-bottom: 50px; 
+
+    }
 }
 
 
 .Benefits{
     padding-bottom: 240px;
+    @media (max-width: 900px) {
+      padding-bottom: 50px; 
+
+    } 
+    
     
 
 }
@@ -251,33 +260,6 @@ margin-bottom: 32px;
 
     }
 }
-
-
-
-// .service{
-//     position: relative;
-//     background-image: url("/Homebackgorunds.png");
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position: center;
-//     padding-top: 200px;
-//     z-index: 2; 
-//     margin-top: 300px;
-//     margin-bottom: 200px;
-
-//     .image{
-//         position: absolute;
-//         right: -190;
-//         bottom: -150px;
-//         z-index: 5; 
-
-//     }
-//     .content{
-//        padding-top: 1;
-
-//     }
-// }
-
 
 .service {
     position: relative;
@@ -427,7 +409,12 @@ color: #0A0908;
 
 
 .featureSection{
-    margin-bottom: 219px;
+    margin-bottom: 219px; 
+    @media (max-width: 900px) {
+      margin-bottom: 50px; 
+      margin-top: 250px;
+
+    }
 }
 
 .vision{
