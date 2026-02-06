@@ -1,6 +1,11 @@
 .serviceDetails{
     padding-bottom:120px ;
     padding-top:200px ;
+    @media (max-width: 768px) {
+      padding-top: 100px;
+    }
+
+    
 }
 
 
@@ -19,6 +24,11 @@
       right: -43px;
       bottom: -50px;
       padding-top: 20px;
+
+      @media (max-width: 768px) {
+        
+        display: none;
+        }
     }
   
     .content {
@@ -28,8 +38,8 @@
     /* 📱 Mobile Fix */
     @media (max-width: 768px) {
       min-height: auto;
-      margin-top: 48px;
-      padding: 24px 0;
+      margin-top: 10px;
+      padding-top:100px;
   
       .image {
         position: static;
@@ -60,21 +70,43 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-
-    .text{
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 150%;
-            text-transform: capitalize;
-            color: #0A0908;
-
+    @media (max-width: 768px) {
+      padding-top: 100px;
     }
 
-    .heading{
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 110%;
-        text-transform: capitalize;
-        color: #0A0908;
+    // .text{
+    //         font-weight: 400;
+    //         font-size: 22px;
+    //         line-height: 150%;
+    //         text-transform: capitalize;
+    //         color: #0A0908;
+
+    // }
+
+    // .heading{
+    //     font-weight: 700;
+    //     font-size: 56px;
+    //     line-height: 110%;
+    //     text-transform: capitalize;
+    //     color: #0A0908;
+    // }
+    .heading {
+      font-weight: 700;
+      font-size: clamp(28px, 5vw, 56px);
+      line-height: 110%;
+      text-transform: capitalize;
+      color: #0A0908;
     }
+    
+    .text {
+      font-weight: 400;
+      font-size: clamp(16px, 2.5vw, 22px);
+      line-height: 150%;
+      text-transform: capitalize;
+      color: #0A0908;
+
+opacity: 0.7;
+
+    }
+    
 }

@@ -83,6 +83,9 @@ color: #1F1F1F;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
+    @media (max-width: 480px) {
+      font-size: 1rem;
+    }
     
   }
 
@@ -108,6 +111,12 @@ font-weight: 300;
 font-size: 24px;
 line-height: 140%;
 color: #0A0908;
+
+@media (max-width: 480px) {
+  font-size: 1rem;
+}
+
+
     }
     &.largeSize {
       font-style: normal;

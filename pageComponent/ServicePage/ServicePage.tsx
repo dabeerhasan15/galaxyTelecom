@@ -2,8 +2,6 @@ import { Benifits } from "@/component/Benifits";
 import { Card } from "@/component/Card";
 import { GetfreeConsultancy } from "@/component/GetfreeConsultancy";
 import { HeroSection } from "@/component/HeroSection";
-import { Space } from "@/component/Space";
-import { componentSizes } from "@/types";
 import Image from "next/image";
 import classes from "./ServicePage.module.scss";
 
@@ -47,10 +45,6 @@ export const ServicePage = () => {
       </div>
     </div>
 
-    <Space size={componentSizes.medium}/>
-    <Space size={componentSizes.medium}/>
-    <Space size={componentSizes.medium}/>
-    <Space size={componentSizes.medium}/>
 
     <div className="container">
       <div className="row">
