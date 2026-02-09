@@ -9,6 +9,9 @@
 .splineContainer {
   width: 100%;
   height: 700px;
+  @media (max-width: 480px) {
+    display: none;
+  }
 
   canvas {
     width: 1400px !important;
