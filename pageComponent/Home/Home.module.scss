@@ -140,6 +140,7 @@
       display: flex;
       gap: 10px;
       align-items: center;
+      margin-bottom: 40px;
     }
   }
 }
@@ -311,7 +312,7 @@
     background-position: center center;
 
     .image {
-      padding-top: 30px;
+      display: none;
 
       img {
         max-width: 320px !important;
@@ -333,7 +334,7 @@
     margin-bottom: 40px;
 
     .image {
-      padding-top: 20px;
+      display: none;
 
       img {
         max-width: 280px !important;
@@ -348,6 +349,7 @@
     margin-bottom: 30px;
 
     .image {
+      display: none;
       img {
         max-width: 240px !important;
       }
