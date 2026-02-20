@@ -21,7 +21,7 @@ export const Home = () => {
         <div className="row">
           <div className="col-lg-2"></div>
           <div className="col-lg-8">
-            <div className="pt-36 text-center">
+            <div className="pt-10 sm:pt-36 text-center">
               <Text tag={htmlTag.h1}>
                 Latest Telecom hardware & robust Service solutions
               </Text>
@@ -54,6 +54,12 @@ export const Home = () => {
             </div>
           </div>
           <div className="col-lg-1"></div>
+        </div>
+
+        <div className={classes.pictures}>
+          <div className={classes.splineContainers}>
+            <Spline scene="https://prod.spline.design/swb86ZzdnFIhmGbw/scene.splinecode" />
+          </div>
         </div>
 
         <div className={classes.service}>
@@ -336,9 +342,6 @@ export const Home = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <Space size={componentSizes.large} />
-              <Space size={componentSizes.large} />
-              <Space size={componentSizes.large} />
               <Text size={componentSizes.medium}>
                 Ethical behaviour has less to do with what may be required by
                 law, and more to do with adherence to established standards of
@@ -382,16 +385,14 @@ export const Home = () => {
         {/* our service */}
 
         <div className={classes.services}>
-          <div className="row">
-            <Service />
-          </div>
+          <Service />
         </div>
 
         <div className={classes.Benefits}>
           <Benifits />
         </div>
 
-        <div className={classes.Benefits}>
+        <div className={classes.products}>
           <Product />
         </div>
 

@@ -23,12 +23,6 @@ const UnmemoBenifits = () => {
         <div className="col-lg-2"></div>
       </div>
 
-      <Space size={componentSizes.large} />
-      <Space size={componentSizes.large} />
-      <Space size={componentSizes.large} />
-      <Space size={componentSizes.large} />
-      <Space size={componentSizes.small} />
-
       <div className={classes.benefitsContainer}>
         <div className="row">
           <div className="col-lg-2"></div>
@@ -48,7 +42,9 @@ const UnmemoBenifits = () => {
                   <div className={classes.heading}>24 Hour Support</div>
                   <Space size={componentSizes.small} />
                   <Text size={componentSizes.regular}>
-                    We provide technical support on a 24x7 basis for our customers. Our technical support team is comprised of certified engineers to trouble shoot any network anomalies.
+                    We provide technical support on a 24x7 basis for our
+                    customers. Our technical support team is comprised of
+                    certified engineers to trouble shoot any network anomalies.
                   </Text>
                 </div>
               </div>
@@ -66,7 +62,9 @@ const UnmemoBenifits = () => {
                   <div className={classes.heading}>Secure Networks</div>
                   <Space size={componentSizes.small} />
                   <Text size={componentSizes.regular}>
-                    We provide our customers with networks that are mission critical and secure with high level of redundancy. 15+ years of experience in delivering secure communication services.
+                    We provide our customers with networks that are mission
+                    critical and secure with high level of redundancy. 15+ years
+                    of experience in delivering secure communication services.
                   </Text>
                 </div>
               </div>
@@ -84,7 +82,10 @@ const UnmemoBenifits = () => {
                   <div className={classes.heading}>Turnkey Solutions</div>
                   <Space size={componentSizes.small} />
                   <Text size={componentSizes.regular}>
-                  We provide a complete turnkey solution to our clients from network design, hardware selection, installation, commissioning & training. A complete end-to-end resolution is provided to run a seamless network.
+                    We provide a complete turnkey solution to our clients from
+                    network design, hardware selection, installation,
+                    commissioning & training. A complete end-to-end resolution
+                    is provided to run a seamless network.
                   </Text>
                 </div>
               </div>
@@ -102,7 +103,9 @@ const UnmemoBenifits = () => {
                   <div className={classes.heading}>Quality of Service</div>
                   <Space size={componentSizes.small} />
                   <Text size={componentSizes.regular}>
-                  We provide technical support on a 24x7 basis for our customers. Our technical support team is comprised of certified engineers to trouble shoot any network anomalies.
+                    We provide technical support on a 24x7 basis for our
+                    customers. Our technical support team is comprised of
+                    certified engineers to trouble shoot any network anomalies.
                   </Text>
                 </div>
               </div>
