@@ -26,10 +26,17 @@
   .splineContainers {
     display: none;
 
-    @media (max-width: 426px) {
+    @media (max-width: 500px) {
       display: flex;
       position: absolute;
-      right: 10;
+      right: -75px;
+      height: 200px;
+    }
+
+    @media (max-width: 376px) {
+      display: flex;
+      position: absolute;
+      right: -40px;
       height: 200px;
     }
 
@@ -346,7 +353,7 @@
 
   // Mobile landscape
   @media (max-width: 576px) {
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 30px;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -369,7 +376,7 @@
 
   // Mobile portrait
   @media (max-width: 425px) {
-    padding-top: 40px;
+    padding-top: 100px;
     padding-bottom: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -384,9 +391,9 @@
   }
 
   // Extra small devices
-  @media (max-width: 375px) {
+  @media (max-width: 376px) {
     padding-top: 30px;
-    margin-top: 30px;
+    margin-top: 120px;
     margin-bottom: 30px;
 
     .image {
