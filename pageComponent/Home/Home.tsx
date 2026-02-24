@@ -129,17 +129,17 @@ export const Home = () => {
               <div className="row">
                 <div className="col-lg-3">
                   <div className={classes.membershipDetail}>
-                    <Text tag={htmlTag.h3}>Dun & Bradstreet</Text>
-                    <Space size={componentSizes.regular} />
-                    <Space />
+                    <Text
+                      tag={htmlTag.h3}
+                      className={classes.registeredCompanyName}
+                    >
+                      Dun & Bradstreet
+                    </Text>
                     <Text className={classes.registeredCompany}>
                       Registered Company
                     </Text>
-                    <Space size={componentSizes.small} />
                     <Text className={classes.companyIds}>561427868</Text>
-                    <Space size={componentSizes.regular} />
-                    <Space size={componentSizes.regular} />
-                    <Space size={componentSizes.regular} />
+
                     <div className={classes.images}>
                       <Image
                         src="/membership1.png"
@@ -152,17 +152,17 @@ export const Home = () => {
                 </div>
                 <div className="col-lg-3">
                   <div className={classes.membershipDetail}>
-                    <Text tag={htmlTag.h3}>Ethixbase360</Text>
-                    <Space size={componentSizes.regular} />
-                    <Space />
+                    <Text
+                      tag={htmlTag.h3}
+                      className={classes.registeredCompanyName}
+                    >
+                      Ethixbase360
+                    </Text>
+
                     <Text className={classes.registeredCompany}>
                       Registered Company
                     </Text>
-                    <Space size={componentSizes.small} />
                     <Text className={classes.companyIds}>TC 4194-7948</Text>
-                    <Space size={componentSizes.regular} />
-                    <Space size={componentSizes.regular} />
-                    <Space size={componentSizes.regular} />
                     <div className={classes.images}>
                       <Image
                         src="/membership2.png"
@@ -175,17 +175,16 @@ export const Home = () => {
                 </div>
                 <div className="col-lg-3">
                   <div className={classes.membershipDetail}>
-                    <Text tag={htmlTag.h3}>NCAGE Code</Text>
-                    <Space size={componentSizes.regular} />
-                    <Space />
+                    <Text
+                      tag={htmlTag.h3}
+                      className={classes.registeredCompanyName}
+                    >
+                      NCAGE Code
+                    </Text>
                     <Text className={classes.registeredCompany}>
                       Registered Company
                     </Text>
-                    <Space size={componentSizes.small} />
                     <Text className={classes.companyIds}>2GELW</Text>
-                    <Space size={componentSizes.regular} />
-                    <Space size={componentSizes.regular} />
-                    <Space size={componentSizes.regular} />
                     <div className={classes.images}>
                       <Image
                         src="/membership3.png"
@@ -198,17 +197,16 @@ export const Home = () => {
                 </div>
                 <div className="col-lg-3">
                   <div className={classes.membershipDetails}>
-                    <Text tag={htmlTag.h3}>TDRA</Text>
-                    <Space size={componentSizes.regular} />
-                    <Space />
+                    <Text
+                      tag={htmlTag.h3}
+                      className={classes.registeredCompanyName}
+                    >
+                      TDRA
+                    </Text>
                     <Text className={classes.registeredCompany}>
                       Registered Company
                     </Text>
-                    <Space size={componentSizes.small} />
                     <Text className={classes.companyIds}>DA25608/24</Text>
-                    <Space size={componentSizes.regular} />
-                    <Space size={componentSizes.regular} />
-                    <Space size={componentSizes.regular} />
                     <div className={classes.images}>
                       <Image
                         src="/membership4.png"

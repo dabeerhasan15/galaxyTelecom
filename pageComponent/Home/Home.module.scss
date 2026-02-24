@@ -85,21 +85,42 @@
   .membershipDetail {
     padding-top: 24px;
     padding-bottom: 24px;
-
     border-right: 1px solid #e0e0e0;
+
+    @media (max-width: 600px) {
+      border-right: none;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .registeredCompanyName {
+      padding-bottom: 25px;
+      @media (max-width: 600px) {
+        padding-bottom: 14px;
+        font-size: 28px;
+      }
+    }
 
     .registeredCompany {
       font-weight: 400;
       font-size: 24px;
       line-height: 140%;
       color: #444444;
+      padding-bottom: 8px;
+      @media (max-width: 600px) {
+        padding-bottom: 4px;
+        font-size: 20px;
+      }
     }
 
-    .companyId {
+    .companyIds {
       font-weight: 600;
       font-size: 16px;
       line-height: 140%;
       color: #444444;
+      padding-bottom: 38px;
+      @media (max-width: 600px) {
+        padding-bottom: 18px;
+        font-size: 14px;
+      }
     }
 
     .images {
@@ -111,18 +132,36 @@
     padding-top: 24px;
     padding-bottom: 24px;
 
+    .registeredCompanyName {
+      padding-bottom: 25px;
+      @media (max-width: 600px) {
+        padding-bottom: 14px;
+        font-size: 28px;
+      }
+    }
+
     .registeredCompany {
       font-weight: 400;
       font-size: 24px;
       line-height: 140%;
       color: #444444;
+      padding-bottom: 8px;
+      @media (max-width: 600px) {
+        padding-bottom: 4px;
+        font-size: 20px;
+      }
     }
 
-    .companyId {
+    .companyIds {
       font-weight: 600;
       font-size: 16px;
       line-height: 140%;
       color: #444444;
+      padding-bottom: 38px;
+      @media (max-width: 600px) {
+        padding-bottom: 18px;
+        font-size: 14px;
+      }
     }
 
     .images {
