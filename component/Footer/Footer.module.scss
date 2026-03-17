@@ -26,6 +26,18 @@
 .outer {
   display: flex;
   justify-content: center;
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.outers {
+  display: flex;
+  justify-content: center;
+  display: none;
+  @media (max-width: 600px) {
+    display: flex;
+  }
 }
 
 .content {
@@ -33,7 +45,10 @@
   z-index: 10;
   max-width: 1600px;
   width: 100%;
-  padding-top: 6.25rem; // tailwind's pt-25 (25 * 0.25rem)
+  padding-top: 6.25rem;
+  @media (max-width: 600px) {
+    padding-top: 53px;
+  }
 }
 
 .container {
@@ -185,12 +200,26 @@
   align-items: center;
 }
 
+.flexs {
+  display: flex;
+  gap: 100px;
+  padding-bottom: 48px;
+}
+
+.moreaboutus {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding-top: 32px;
+}
+
 .contactUs {
   display: flex;
   gap: 48px;
 
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     gap: 20px;
+    padding-bottom: 32px;
   }
 }
 
@@ -263,4 +292,88 @@
     border-radius: 999px;
     padding: 12px;
   }
+}
+
+.contactinfo {
+  padding-top: 35px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.2);
+}
+
+.contactuson {
+  padding-top: 40px;
+  width: 100%;
+  margin: 0 10px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.2);
+}
+
+.navigations {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 18px;
+  padding-top: 48px;
+  padding-bottom: 25px;
+
+  color: #ffffff;
+}
+
+.termandservices {
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+  .supports {
+    padding-right: 12px;
+    padding-top: 32px;
+    padding-bottom: 58px;
+  }
+
+  .terms {
+    display: flex;
+    gap: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+
+    .privacy {
+      display: flex;
+      gap: 32px;
+    }
+  }
+
+  .images {
+    display: flex;
+    gap: 18px;
+  }
+
+  .social {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+    padding: 12px;
+  }
+}
+
+.brands {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 110%;
+  letter-spacing: -0.06em;
+  color: #ffffff;
+}
+
+.waveCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
 }
