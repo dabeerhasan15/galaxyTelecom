@@ -121,10 +121,7 @@ export const Home = () => {
                 </div>
               </div>
 
-              <Space />
-              <Space />
-              <Space />
-              <Space />
+              <div className="mt-16"></div>
 
               <div className="row">
                 <div className="col-lg-3">
@@ -241,16 +238,12 @@ export const Home = () => {
             <div className={`col-lg-5 ${classes.centerColumn}`}>
               <div className={classes.textDetail}>
                 <div className={classes.weOffer}>What we offer</div>
-                <Space size={componentSizes.small} />
-                <Space size={componentSizes.large} />
-                <Text size={componentSizes.medium}>
+
+                <Text size={componentSizes.medium} className="mt-7 mb-12">
                   We offer Voice and Data Connectivity products and services to
                   various business verticals – oil & Gas / Defense / Media /
                   Maritime / Government & Humanitarian Agencies.
                 </Text>
-                <Space size={componentSizes.small} />
-                <Space size={componentSizes.large} />
-                <Space size={componentSizes.large} />
                 <button
                   onClick={openContactModal}
                   className={classes.learnmore}
@@ -292,16 +285,12 @@ export const Home = () => {
             <div className={`col-lg-5 ${classes.centerColumn}`}>
               <div className={classes.textDetail}>
                 <div className={classes.weOffer}>Our Position In Industry</div>
-                <Space size={componentSizes.small} />
-                <Space size={componentSizes.large} />
-                <Text size={componentSizes.medium}>
+
+                <Text size={componentSizes.medium} className="mt-7 mb-12">
                   Taking advantage of the rich experience of its team members,
                   Galaxy Telecom is a distinguished and recognized leader in the
                   Telecommunications industry.
                 </Text>
-                <Space size={componentSizes.small} />
-                <Space size={componentSizes.large} />
-                <Space size={componentSizes.large} />
                 <button
                   onClick={openContactModal}
                   className={classes.learnmore}
@@ -409,13 +398,10 @@ export const Home = () => {
                           alt="Galaxy Telecom Logo"
                           width={64}
                           height={64}
+                          className="mb-6"
                         />
-                        <Space size={componentSizes.small} />
-                        <Space size={componentSizes.small} />
-                        <Space size={componentSizes.small} />
                         <div className={classes.heading}>Availability</div>
-                        <Space size={componentSizes.small} />
-                        <Text size={componentSizes.regular}>
+                        <Text size={componentSizes.regular} className="mt-2">
                           We always stock a wide selection of the most popular
                           products in the market.
                         </Text>
@@ -428,13 +414,10 @@ export const Home = () => {
                           alt="Galaxy Telecom Logo"
                           width={64}
                           height={64}
+                          className="mb-6"
                         />
-                        <Space size={componentSizes.small} />
-                        <Space size={componentSizes.small} />
-                        <Space size={componentSizes.small} />
                         <div className={classes.heading}>Price Guarantee</div>
-                        <Space size={componentSizes.small} />
-                        <Text size={componentSizes.regular}>
+                        <Text size={componentSizes.regular} className="mt-2">
                           With our network of national and international
                           partners we can always offer competitive prices
                         </Text>
@@ -447,13 +430,10 @@ export const Home = () => {
                           alt="Galaxy Telecom Logo"
                           width={64}
                           height={64}
+                          className="mb-6"
                         />
-                        <Space size={componentSizes.small} />
-                        <Space size={componentSizes.small} />
-                        <Space size={componentSizes.small} />
                         <div className={classes.heading}>Professionalism</div>
-                        <Space size={componentSizes.small} />
-                        <Text size={componentSizes.regular}>
+                        <Text size={componentSizes.regular} className="mt-2">
                           A team of professionals and market experts will help
                           you in your product purchases.
                         </Text>
@@ -466,13 +446,11 @@ export const Home = () => {
                           alt="Galaxy Telecom Logo"
                           width={64}
                           height={64}
+                          className="mb-6"
                         />
-                        <Space size={componentSizes.small} />
-                        <Space size={componentSizes.small} />
-                        <Space size={componentSizes.small} />
                         <div className={classes.heading}>Genuine Products</div>
-                        <Space size={componentSizes.small} />
-                        <Text size={componentSizes.regular}>
+
+                        <Text size={componentSizes.regular} className="mt-2">
                           We deal only in genuine products & The products we
                           bring to market always have an official guarantee.
                         </Text>
