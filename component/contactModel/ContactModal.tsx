@@ -13,6 +13,7 @@ export const ContactModal = () => {
   return (
     <>
       <div className={styles.overlay} onClick={closeContactModal} />
+
       <div className={styles.contactModal}>
         <button className={styles.closeButton} onClick={closeContactModal}>
           <svg

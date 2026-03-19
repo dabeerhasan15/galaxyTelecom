@@ -3,8 +3,11 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Optional: adds subtle shadow
+  transition: box-shadow 0.3s ease;
+}
 
+.scrolled {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -37,6 +40,10 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  @media (max-width: 600px) {
+    width: 182px; // extra small devices
+    height: 50px;
+  }
 }
 
 .logo {
@@ -76,7 +83,7 @@
       width: 0.5rem;
       transform: translateX(-50%);
       border-radius: 50%;
-      background-color: #2996A2;
+      background-color: #2996a2;
     }
   }
 }
@@ -94,7 +101,7 @@
 }
 
 .contactButton {
-  background-color: #2996A2;
+  background-color: #2996a2;
   color: white;
   padding: 0.5rem 1.5rem;
   border-radius: 9999px;
@@ -134,9 +141,8 @@
   height: 1.5rem;
 }
 
-
 .mobileDropdown {
-  position: absolute;
+  position: fixed;
   top: 5rem;
   left: 0;
   width: 100%;
@@ -150,7 +156,7 @@
 
   a {
     font-size: 18px;
-    color: #1F1F1F;
+    color: #1f1f1f;
     text-decoration: none;
   }
 
@@ -161,7 +167,7 @@
 
 .mobileContactButton {
   margin-top: 1rem;
-  background-color: #2996A2;
+  background-color: #2996a2;
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 9999px;
@@ -169,8 +175,6 @@
   border: none;
   cursor: pointer;
 }
-
-
 
 // ... existing styles ...
 
@@ -202,7 +206,7 @@
   right: 0;
   width: 70%;
   height: 100vh;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 48px 0px 0px 48px;
   z-index: 1000;
@@ -233,13 +237,14 @@
   color: #6b7280;
   width: 32px;
   height: 32px;
-  background-color: #F9F9F6;
+  background-color: #f9f9f6;
   border-radius: 100px;
   transition: color 0.2s;
   padding: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1001;
 
   &:hover {
     color: #111827;
@@ -255,19 +260,16 @@
 
 .modalSubtitle {
   margin-bottom: 0.5rem;
-    display: inline-block;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 140%;
-    color: #1F1F1F;
-    padding: 8px 16px;
-    background: #F8F8F8;
-    border: 1px solid #E0E0E0;
-    border-radius: 24px;
-    margin-bottom: 20px;
-
-
-  
+  display: inline-block;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #1f1f1f;
+  padding: 8px 16px;
+  background: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 24px;
+  margin-bottom: 20px;
 }
 
 .modalTitle {
@@ -306,24 +308,23 @@
   margin-bottom: 1rem;
 
   label {
-font-weight: 300;
-font-size: 16px;
-line-height: 160%;
-letter-spacing: 0.02em;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
 
-color: #000000;
-
+    color: #000000;
   }
 
   input,
   textarea {
-padding: 12px 20px;
-background: #F5F5F5;
-border-radius: 12px;
+    padding: 12px 20px;
+    background: #f5f5f5;
+    border-radius: 12px;
 
     &:focus {
       outline: none;
-      border-color: #2996A2;
+      border-color: #2996a2;
     }
 
     &::placeholder {
@@ -345,8 +346,8 @@ border-radius: 12px;
   cursor: pointer;
   transition: background-color 0.2s;
 
-background: #0A0908;
-border-radius: 16px;
+  background: #0a0908;
+  border-radius: 16px;
 
   &:hover {
     background-color: #1f2937;
@@ -362,20 +363,20 @@ border-radius: 16px;
   margin-bottom: 2rem;
 
   h4 {
-        margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
     font-weight: 400;
     font-size: 24px;
     line-height: 110%;
     letter-spacing: -0.01em;
-    color: #1F1F1F;
+    color: #1f1f1f;
   }
 
   p {
     margin: 0.25rem 0;
-font-weight: 400;
-font-size: 18px;
-line-height: 160%;
-color: #1F1F1F;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #1f1f1f;
   }
 }
 
@@ -396,20 +397,18 @@ color: #1F1F1F;
     transition: all 0.2s;
 
     &:hover {
-      background-color: #2996A2;
+      background-color: #2996a2;
       color: white;
     }
   }
 }
 
-
-.flexgap{
+.flexgap {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 
-  .flexx{
-    
+  .flexx {
   }
 }
