@@ -48,6 +48,9 @@ const UnmemoBenifits = () => {
                   </Text>
                 </div>
               </div>
+
+              <div className={classes.vectorLine}></div>
+
               <div className="col-lg-6">
                 <div className={classes.upperleft}>
                   <Image
@@ -68,6 +71,9 @@ const UnmemoBenifits = () => {
                   </Text>
                 </div>
               </div>
+
+              <div className={classes.vectorLine}></div>
+
               <div className="col-lg-6">
                 <div className={classes.upperleft}>
                   <Image
@@ -89,6 +95,9 @@ const UnmemoBenifits = () => {
                   </Text>
                 </div>
               </div>
+
+              <div className={classes.vectorLine}></div>
+
               <div className="col-lg-6">
                 <div className={classes.upperleft}>
                   <Image
