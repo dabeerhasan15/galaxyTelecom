@@ -73,3 +73,11 @@
   color: #0a0908;
   font-weight: 400;
 }
+
+.secondCard {
+  display: block;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
