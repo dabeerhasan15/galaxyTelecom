@@ -16,8 +16,11 @@
 
   .content {
     position: absolute;
-    right: 263px;
+    right: 260px;
     padding-left: 20px;
+    @media (max-width: 1550px) {
+      right: 200px;
+    }
 
     .heading {
       font-weight: 600;
