@@ -28,6 +28,7 @@
       line-height: 110%;
       text-transform: capitalize;
       color: #ffffff;
+      padding-bottom: 32px;
     }
 
     .tag {
@@ -139,13 +140,14 @@
 
     .content {
       padding-right: 0;
-      text-align: center;
       position: relative;
-      right: auto;
+      padding-right: 0;
+      margin-right: 50px;
 
       .heading {
         font-size: 24px;
         line-height: 120%;
+        padding-bottom: 16px;
       }
 
       .tag {
@@ -155,36 +157,14 @@
     }
 
     .image {
-      position: relative;
-      right: auto;
-      bottom: auto;
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
+      position: absolute;
+      right: 0;
+      bottom: 0;
     }
 
     .imageWrapper {
       width: 140px;
       height: 133px;
-    }
-  }
-
-  // Extra small devices
-  @media (max-width: 375px) {
-    .content {
-      .heading {
-        font-size: 20px;
-      }
-
-      .tag {
-        font-size: 14px;
-        padding: 8px 12px;
-      }
-    }
-
-    .imageWrapper {
-      width: 120px;
-      height: 114px;
     }
   }
 }
