@@ -187,6 +187,12 @@ export const Footer = () => {
                   </div>
 
                   <div>
+                    <div className={classes.contact}>PP.O. Box</div>
+                    <Space />
+                    <div>74302</div>
+                  </div>
+
+                  <div>
                     <div className={classes.contact}>Location</div>
                     <Space />
                     <div className={classes.number}>
@@ -289,6 +295,16 @@ export const Footer = () => {
                           info@galaxy-telecom.com
                         </a>
                       </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-lg-5">
+                  <div className={classes.contactUs}>
+                    <div>
+                      <div className={classes.contact}>PP.O. Box</div>
+                      <Space />
+                      <div className={classes.number}>74302</div>
                     </div>
                   </div>
                 </div>
