@@ -59,7 +59,7 @@ export const ContactModal = () => {
                     <div className={styles.contactInfo}>
                       <div className={styles.infoItem}>
                         <h4>Contact us</h4>
-                        <p>+92-51-8436786</p>
+                        <p>+971-4-2780986</p>
                         <p>info@galaxy-telecom.com</p>
                       </div>
 
@@ -224,7 +224,7 @@ export const ContactModal = () => {
                   <div className={styles.contactInfo}>
                     <div className={styles.infoItem}>
                       <h4>Contact us</h4>
-                      <p>+92-51-8436786</p>
+                      <p>+971-4-2780986</p>
                       <p>info@galaxy-telecom.com</p>
                     </div>
 

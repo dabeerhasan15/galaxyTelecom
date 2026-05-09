@@ -30,6 +30,7 @@ const UnmemoGetfreeConsultancy = () => {
                 width={279}
                 height={266}
                 className={classes.img}
+                unoptimized
               />
             </div>
           </div>

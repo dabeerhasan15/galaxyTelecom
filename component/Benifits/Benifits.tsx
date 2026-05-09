@@ -35,6 +35,7 @@ const UnmemoBenifits = () => {
                     alt="Galaxy Telecom Logo"
                     width={80}
                     height={80}
+                    unoptimized
                   />
                   <Space size={componentSizes.small} />
                   <Space size={componentSizes.small} />
@@ -58,6 +59,7 @@ const UnmemoBenifits = () => {
                     alt="Galaxy Telecom Logo"
                     width={80}
                     height={80}
+                    unoptimized
                   />
                   <Space size={componentSizes.small} />
                   <Space size={componentSizes.small} />
@@ -81,6 +83,7 @@ const UnmemoBenifits = () => {
                     alt="Galaxy Telecom Logo"
                     width={80}
                     height={80}
+                    unoptimized
                   />
                   <Space size={componentSizes.small} />
                   <Space size={componentSizes.small} />
@@ -105,6 +108,7 @@ const UnmemoBenifits = () => {
                     alt="Galaxy Telecom Logo"
                     width={80}
                     height={80}
+                    unoptimized
                   />
                   <Space size={componentSizes.small} />
                   <Space size={componentSizes.small} />

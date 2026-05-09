@@ -24,6 +24,7 @@ export const ServicePage = () => {
                   alt="Galaxy Telecom Logo"
                   width={485}
                   height={432}
+                  unoptimized
                 />
               </div>
             </div>

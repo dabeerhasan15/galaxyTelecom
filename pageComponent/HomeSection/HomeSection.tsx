@@ -41,6 +41,7 @@ export const HomeSection = () => {
                 alt="ethiucs"
                 width={1328}
                 height={537}
+                unoptimized
               />
             </div>
             <div className="col-lg-1"></div>
@@ -92,6 +93,7 @@ export const HomeSection = () => {
                           width={64}
                           height={64}
                           className="mb-6"
+                          unoptimized
                         />
                         <div className={classes.heading}>Availability</div>
                         <Text size={componentSizes.regular} className="mt-2">
@@ -108,6 +110,7 @@ export const HomeSection = () => {
                           width={64}
                           height={64}
                           className="mb-6"
+                          unoptimized
                         />
                         <div className={classes.heading}>Price Guarantee</div>
                         <Text size={componentSizes.regular} className="mt-2">
@@ -124,6 +127,7 @@ export const HomeSection = () => {
                           width={64}
                           height={64}
                           className="mb-6"
+                          unoptimized
                         />
                         <div className={classes.heading}>Professionalism</div>
                         <Text size={componentSizes.regular} className="mt-2">
@@ -140,6 +144,7 @@ export const HomeSection = () => {
                           width={64}
                           height={64}
                           className="mb-6"
+                          unoptimized
                         />
                         <div className={classes.heading}>Genuine Products</div>
 
@@ -166,6 +171,7 @@ export const HomeSection = () => {
                         alt="membership"
                         width={452}
                         height={446}
+                        unoptimized
                       />
                     </div>
                   </div>

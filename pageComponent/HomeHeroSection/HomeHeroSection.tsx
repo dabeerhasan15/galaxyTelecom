@@ -64,6 +64,7 @@ export const HomeHeroSection = () => {
                   alt="Galaxy Telecom Logo"
                   width={811}
                   height={728}
+                  unoptimized
                 />
               </div>
             </div>
@@ -136,6 +137,7 @@ export const HomeHeroSection = () => {
                         alt="membership"
                         width={184}
                         height={32}
+                        unoptimized
                       />
                     </div>
                   </div>
@@ -159,6 +161,7 @@ export const HomeHeroSection = () => {
                         alt="membership"
                         width={143}
                         height={48}
+                        unoptimized
                       />
                     </div>
                   </div>
@@ -181,6 +184,7 @@ export const HomeHeroSection = () => {
                         alt="membership"
                         width={77}
                         height={32}
+                        unoptimized
                       />
                     </div>
                   </div>
@@ -203,6 +207,7 @@ export const HomeHeroSection = () => {
                         alt="membership"
                         width={64}
                         height={49}
+                        unoptimized
                       />
                     </div>
                   </div>

@@ -24,6 +24,7 @@ export const Home = () => {
                 alt="membership"
                 width={544}
                 height={437}
+                unoptimized
               />
             </div>
             <div className="col-lg-1"></div>
@@ -71,6 +72,7 @@ export const Home = () => {
                 alt="membership"
                 width={544}
                 height={437}
+                unoptimized
               />
             </div>
             <div className="col-lg-1"></div>

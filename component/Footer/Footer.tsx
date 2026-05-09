@@ -1,4 +1,5 @@
 "use client";
+import { useContactModal } from "@/context/ContactModalContext";
 import { componentSizes } from "@/types";
 import Link from "next/link";
 import { useEffect } from "react";
@@ -6,6 +7,8 @@ import { Space } from "../Space";
 import classes from "./Footer.module.scss";
 
 export const Footer = () => {
+  const { openContactModal } = useContactModal();
+
   useEffect(() => {
     const canvas = document.getElementById(
       "waveCanvas",
@@ -134,9 +137,9 @@ export const Footer = () => {
                   <Link href="/product" className={classes.field}>
                     Products
                   </Link>
-                  <Link href="/" className={classes.field}>
+                  <button onClick={openContactModal} className={classes.field}>
                     Contact Us
-                  </Link>
+                  </button>
                 </div>
               </div>
               <div className="col-lg-1"></div>
@@ -187,7 +190,7 @@ export const Footer = () => {
                   </div>
 
                   <div>
-                    <div className={classes.contact}>PP.O. Box</div>
+                    <div className={classes.contact}>P.O. Box</div>
                     <Space />
                     <div>74302</div>
                   </div>
@@ -214,7 +217,7 @@ export const Footer = () => {
                 <div className="col-lg-6">
                   <div className={classes.terms}>
                     <div className={classes.support}>
-                      © 2025 | Mannin Cancers Support Group
+                      © 2025 | Galaxy Telecom
                     </div>
                     <div className={classes.privacy}>
                       <div>Privacy Policy</div>
@@ -302,7 +305,7 @@ export const Footer = () => {
                 <div className="col-lg-5">
                   <div className={classes.contactUs}>
                     <div>
-                      <div className={classes.contact}>PP.O. Box</div>
+                      <div className={classes.contact}>P.O. Box</div>
                       <Space />
                       <div className={classes.number}>74302</div>
                     </div>
@@ -345,9 +348,9 @@ export const Footer = () => {
                 <Link href="/product" className={classes.field}>
                   Products
                 </Link>
-                <Link href="/" className={classes.field}>
+                <button onClick={openContactModal} className={classes.field}>
                   Contact Us
-                </Link>
+                </button>
               </div>
             </div>
 
@@ -364,7 +367,7 @@ export const Footer = () => {
                   </div>
 
                   <div className={classes.supports}>
-                    © 2025 | Mannin Cancers Support Group
+                    © 2025 | Galaxy Telecom
                   </div>
                 </div>
                 <div className="col-lg-5"></div>
