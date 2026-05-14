@@ -6,13 +6,20 @@ Variables
 /* -------------------------------------------
 Fonts
 ------------------------------------------- */
-@use "./fonts/urbanist.scss" as fonts;
-@use "./fonts/jakarta.scss" as jakarta;
+// @use "./fonts/urbanist.scss" as fonts;
+// @use "./fonts/jakarta.scss" as jakarta;
 
 /* -------------------------------------------
 Grid
 ------------------------------------------- */
 @use "./grid/css-grid.scss" as grid;
+@use "./scroll-reveal.scss";
+
+/* Prevent horizontal scroll / layout shift from transforms and full-bleed sections */
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 // html {
 //   scroll-behavior: smooth;
@@ -32,6 +39,8 @@ body {
   //   margin: 0 !important;
   //   padding: 0 !important;
   font-family: "Urbanist", sans-serif !important;
+  max-width: 100%;
+  overflow-x: hidden;
   //   background-color: var(--body-bg) !important;
   //   color: var(--text-color);
   //   max-width: 100%;

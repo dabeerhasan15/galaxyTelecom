@@ -1,5 +1,6 @@
 import { Benifits } from "@/component/Benifits";
 import { Card } from "@/component/Card";
+import { ScrollReveal } from "@/component/ScrollReveal";
 import { GetfreeConsultancy } from "@/component/GetfreeConsultancy";
 import { HeroSection } from "@/component/HeroSection";
 import Image from "next/image";
@@ -14,6 +15,7 @@ export const ServicePage = () => {
         title="We help develop network infrastructure"
       />
 
+      <ScrollReveal direction="left">
       <div className="container">
         <div className={classes.service}>
           <div className="row">
@@ -37,7 +39,9 @@ export const ServicePage = () => {
           </div>
         </div>
       </div>
+      </ScrollReveal>
 
+      <ScrollReveal direction="top">
       <div className="container">
         <div className="row">
           <div className={classes.serviceText}>
@@ -48,7 +52,9 @@ export const ServicePage = () => {
           </div>
         </div>
       </div>
+      </ScrollReveal>
 
+      <ScrollReveal direction="bottom">
       <div className="container">
         <div className="row">
           <div className="col-lg-4">
@@ -74,10 +80,13 @@ export const ServicePage = () => {
           </div>
         </div>
       </div>
+      </ScrollReveal>
 
+      <ScrollReveal direction="right">
       <div className={classes.serviceDetails}>
         <Benifits />
       </div>
+      </ScrollReveal>
     </>
   );
 };

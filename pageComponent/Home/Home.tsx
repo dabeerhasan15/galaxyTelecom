@@ -1,4 +1,5 @@
 "use client";
+import { ScrollReveal } from "@/component/ScrollReveal";
 import { Text } from "@/component/Text";
 import { componentSizes } from "@/types";
 
@@ -15,6 +16,7 @@ export const Home = () => {
 
       <div className="container">
         <div className={classes.whatWeOffer}>
+          <ScrollReveal direction="left">
           <div className="row">
             <div className="col-lg-1"></div>
             <div className="col-lg-4">
@@ -62,7 +64,9 @@ export const Home = () => {
             </div>
             <div className="col-lg-1"></div>
           </div>
+          </ScrollReveal>
 
+          <ScrollReveal direction="right">
           <div className="row ">
             <div className="col-lg-1"></div>
             <div className="col-lg-4">
@@ -110,6 +114,7 @@ export const Home = () => {
             </div>
             <div className="col-lg-1"></div>
           </div>
+          </ScrollReveal>
         </div>
       </div>
 

@@ -14,7 +14,7 @@ export default function RootLayout({
       <body>
       <ContactModalProvider>
         <Header />
-        {children}
+        <main className="layout-main">{children}</main>
         <ContactModal />
         <Footer />
         </ContactModalProvider>

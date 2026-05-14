@@ -11,6 +11,66 @@
   );
 }
 
+/* Scroll space + fixed footer; reveal wipes up from bottom (clip-path) */
+.footerRevealSpacer {
+  width: 100%;
+  flex-shrink: 0;
+  pointer-events: none;
+}
+
+.footerSticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  width: 100%;
+  /* Closed: fully clipped from top → grows upward from bottom edge */
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path 1.5s cubic-bezier(0.22, 0.9, 0.36, 0.9);
+  will-change: clip-path;
+}
+
+.footerStickyOpen {
+  clip-path: inset(0% 0 0% 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footerSticky {
+    position: relative;
+    z-index: auto;
+    clip-path: none;
+    transition: none;
+    will-change: auto;
+  }
+
+  .footerStickyOpen {
+    clip-path: none;
+  }
+
+  .footerRevealSpacer {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerSticky {
+    position: relative;
+    z-index: auto;
+    clip-path: none;
+    transition: none;
+    will-change: auto;
+  }
+
+  .footerStickyOpen {
+    clip-path: none;
+  }
+
+  .footerRevealSpacer {
+    display: none;
+  }
+}
+
 .decorRight {
   position: absolute;
   top: 0;

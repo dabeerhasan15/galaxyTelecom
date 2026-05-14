@@ -1,3 +1,4 @@
+import { ScrollReveal } from "@/component/ScrollReveal";
 import { Text } from "@/component/Text";
 import { componentSizes, htmlTag } from "@/types";
 
@@ -12,6 +13,7 @@ export const HomeSection = () => {
     <>
       <div className="container">
         {/* Values & code of Ethics */}
+        <ScrollReveal direction="left">
         <div className={classes.Ethics}>
           <div className="row">
             <div className="col-lg-1"></div>
@@ -62,22 +64,30 @@ export const HomeSection = () => {
             <div className="col-lg-1"></div>
           </div>
         </div>
+        </ScrollReveal>
 
         {/* our service */}
 
+        <ScrollReveal direction="right">
         <div className={classes.services}>
           <Service />
         </div>
+        </ScrollReveal>
 
+        <ScrollReveal direction="top">
         <div className={classes.Benefits}>
           <Benifits />
         </div>
+        </ScrollReveal>
 
+        <ScrollReveal direction="bottom">
         <div className={classes.products}>
           <Product />
         </div>
+        </ScrollReveal>
 
         {/* Feature */}
+        <ScrollReveal direction="left">
         <div className={classes.featureSection}>
           <div className="row">
             <div className="col-lg-1"></div>
@@ -181,6 +191,7 @@ export const HomeSection = () => {
             <div className="col-lg-1"></div>
           </div>
         </div>
+        </ScrollReveal>
       </div>
     </>
   );

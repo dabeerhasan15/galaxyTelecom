@@ -1,5 +1,6 @@
 import { GetfreeConsultancy } from "@/component/GetfreeConsultancy";
 import { HeroSection } from "@/component/HeroSection";
+import { ScrollReveal } from "@/component/ScrollReveal";
 import { Space } from "@/component/Space";
 import { componentSizes } from "@/types";
 import Image from "next/image";
@@ -14,6 +15,7 @@ export const AboutUs = () => {
         description="A specialized company providing Telecom hardware and Service solutions in the MENA region. Through a combination of our products and services, we can enhance your productivity and secure the future of your telecom operation."
       />
 
+      <ScrollReveal direction="bottom">
       <div className="container">
         <div className={classes.service}>
           <div className="row">
@@ -37,7 +39,9 @@ export const AboutUs = () => {
           </div>
         </div>
       </div>
+      </ScrollReveal>
 
+      <ScrollReveal direction="top">
       <div className={classes.about}>
         <div className="container">
           <div className="row">
@@ -117,6 +121,7 @@ export const AboutUs = () => {
           </div>
         </div>
       </div>
+      </ScrollReveal>
     </>
   );
 };

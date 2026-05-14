@@ -3,6 +3,7 @@ import { Text } from "@/component/Text";
 import { componentSizes, htmlTag } from "@/types";
 
 import { GetfreeConsultancy } from "@/component/GetfreeConsultancy";
+import { ScrollReveal } from "@/component/ScrollReveal";
 import Spline from "@splinetool/react-spline";
 import Image from "next/image";
 import classes from "./HomeHeroSection.module.scss";
@@ -11,6 +12,7 @@ export const HomeHeroSection = () => {
   return (
     <>
       <div className="container">
+        <ScrollReveal direction="top">
         <div className="row">
           <div className="col-lg-2"></div>
           <div className="col-lg-8">
@@ -34,9 +36,11 @@ export const HomeHeroSection = () => {
           </div>
           <div className="col-lg-3"></div>
         </div>
+        </ScrollReveal>
 
         <Space size={componentSizes.large} />
 
+        {/* <ScrollReveal direction="bottom"> */}
         <div className="row">
           <div className="col-lg-1"></div>
           <div className="col-lg-10">
@@ -48,13 +52,17 @@ export const HomeHeroSection = () => {
           </div>
           <div className="col-lg-1"></div>
         </div>
+        {/* </ScrollReveal> */}
 
+        {/* <ScrollReveal direction="left"> */}
         <div className={classes.pictures}>
           <div className={classes.splineContainers}>
             <Spline scene="https://prod.spline.design/swb86ZzdnFIhmGbw/scene.splinecode" />
           </div>
         </div>
+        {/* </ScrollReveal> */}
 
+        <ScrollReveal direction="right">
         <div className={classes.service}>
           <div className="row">
             <div className="col-lg-4">
@@ -76,7 +84,9 @@ export const HomeHeroSection = () => {
             <div className="col-lg-1"></div>
           </div>
         </div>
+        </ScrollReveal>
 
+        <ScrollReveal direction="bottom">
         <div className={classes.vision}>
           <div className="row">
             <div className="col-lg-1"></div>
@@ -96,8 +106,10 @@ export const HomeHeroSection = () => {
             <div className="col-lg-1"></div>
           </div>
         </div>
+        </ScrollReveal>
       </div>
 
+      <ScrollReveal direction="top">
       <div className={classes.MembershipAccreditation}>
         <div className="container">
           <div className="row">
@@ -218,6 +230,7 @@ export const HomeHeroSection = () => {
           </div>
         </div>
       </div>
+      </ScrollReveal>
     </>
   );
 };

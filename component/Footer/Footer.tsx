@@ -2,57 +2,139 @@
 import { useContactModal } from "@/context/ContactModalContext";
 import { componentSizes } from "@/types";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Space } from "../Space";
 import classes from "./Footer.module.scss";
 
 export const Footer = () => {
   const { openContactModal } = useContactModal();
+  const footerRef = useRef<HTMLElement>(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [footerHeight, setFooterHeight] = useState(0);
+  const [footerRevealed, setFooterRevealed] = useState(false);
+  const [reducedMotion, setReducedMotion] = useState(false);
+  const [isMobileViewport, setIsMobileViewport] = useState(false);
+
+  const staticFooterLayout = reducedMotion || isMobileViewport;
 
   useEffect(() => {
-    const canvas = document.getElementById(
-      "waveCanvas",
-    ) as HTMLCanvasElement | null;
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const sync = () => setReducedMotion(mq.matches);
+    sync();
+    mq.addEventListener("change", sync);
+    return () => mq.removeEventListener("change", sync);
+  }, []);
+
+  useLayoutEffect(() => {
+    const mq = window.matchMedia("(max-width: 768px)");
+    const sync = () => setIsMobileViewport(mq.matches);
+    sync();
+    mq.addEventListener("change", sync);
+    return () => mq.removeEventListener("change", sync);
+  }, []);
+
+  useLayoutEffect(() => {
+    if (staticFooterLayout) return;
+    const el = footerRef.current;
+    if (!el) return;
+
+    const measure = () => {
+      const h = Math.ceil(Math.max(el.offsetHeight, el.scrollHeight));
+      if (h > 0) {
+        setFooterHeight((prev) => (prev !== h ? h : prev));
+      }
+    };
+
+    measure();
+    requestAnimationFrame(() => {
+      measure();
+      requestAnimationFrame(measure);
+    });
+
+    const ro = new ResizeObserver(measure);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [staticFooterLayout]);
+
+  useEffect(() => {
+    if (staticFooterLayout) return;
+
+    const updateReveal = () => {
+      const el = footerRef.current;
+      const fh = el
+        ? Math.ceil(Math.max(el.offsetHeight, el.scrollHeight))
+        : footerHeight;
+      const doc = document.documentElement;
+      const scrollBottom = window.scrollY + window.innerHeight;
+      const threshold = Math.max(200, fh * 0.55);
+      const nearDocumentEnd = scrollBottom >= doc.scrollHeight - threshold;
+
+      setFooterRevealed(nearDocumentEnd);
+    };
+
+    updateReveal();
+    window.addEventListener("scroll", updateReveal, { passive: true });
+    window.addEventListener("resize", updateReveal);
+    return () => {
+      window.removeEventListener("scroll", updateReveal);
+      window.removeEventListener("resize", updateReveal);
+    };
+  }, [staticFooterLayout, footerHeight]);
+
+  useEffect(() => {
+    if (reducedMotion) return;
+
+    const canvas = canvasRef.current;
     if (!canvas) return;
 
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    canvas.width = window.innerWidth;
-    canvas.height = canvas.offsetHeight;
+    const resize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = canvas.offsetHeight;
+    };
+    resize();
 
     const mouse = { x: 0, y: 0 };
 
-    window.addEventListener("mousemove", (e) => {
+    const onMouseMove = (e: MouseEvent) => {
       mouse.x = e.clientX;
       mouse.y = e.clientY;
-    });
+    };
+    window.addEventListener("mousemove", onMouseMove);
 
     const spacing = 18;
-    const cols = Math.floor(canvas.width / spacing);
-    const rows = Math.floor(canvas.height / spacing);
-
-    const particles: {
+    let particles: {
       baseX: number;
       baseY: number;
       x: number;
       y: number;
     }[] = [];
 
-    for (let x = 0; x < cols; x++) {
-      for (let y = 0; y < rows; y++) {
-        particles.push({
-          baseX: x * spacing,
-          baseY: y * spacing,
-          x: x * spacing,
-          y: y * spacing,
-        });
+    const rebuildParticles = () => {
+      const cols = Math.floor(canvas.width / spacing);
+      const rows = Math.floor(canvas.height / spacing);
+      particles = [];
+      for (let x = 0; x < cols; x++) {
+        for (let y = 0; y < rows; y++) {
+          particles.push({
+            baseX: x * spacing,
+            baseY: y * spacing,
+            x: x * spacing,
+            y: y * spacing,
+          });
+        }
       }
-    }
+    };
+    rebuildParticles();
 
     let time = 0;
+    let rafId = 0;
+    let cancelled = false;
 
     const animate = () => {
+      if (cancelled) return;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       particles.forEach((p) => {
@@ -86,16 +168,43 @@ export const Footer = () => {
       });
 
       time += 0.8;
-
-      requestAnimationFrame(animate);
+      rafId = requestAnimationFrame(animate);
     };
 
-    animate();
-  }, []);
-  return (
-    <footer className={classes.footer}>
-      <canvas id="waveCanvas" className={classes.waveCanvas}></canvas>
+    rafId = requestAnimationFrame(animate);
 
+    const onResize = () => {
+      resize();
+      rebuildParticles();
+    };
+    window.addEventListener("resize", onResize);
+
+    return () => {
+      cancelled = true;
+      cancelAnimationFrame(rafId);
+      window.removeEventListener("mousemove", onMouseMove);
+      window.removeEventListener("resize", onResize);
+    };
+  }, [reducedMotion]);
+
+  const stickyClasses = staticFooterLayout
+    ? ""
+    : `${classes.footerSticky} ${footerRevealed ? classes.footerStickyOpen : ""}`;
+
+  return (
+    <>
+      {!staticFooterLayout && (
+        <div
+          className={classes.footerRevealSpacer}
+          style={{ height: footerHeight }}
+          aria-hidden
+        />
+      )}
+      <footer
+        ref={footerRef}
+        className={`${classes.footer} ${stickyClasses}`.trim()}
+      >
+      <canvas ref={canvasRef} className={classes.waveCanvas} aria-hidden />
       {/* <div className={classes.decorRight}>
         <Image src="/footer-right.svg" alt="footer" width={126} height={319} />
       </div>
@@ -383,5 +492,6 @@ export const Footer = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };

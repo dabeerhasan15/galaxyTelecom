@@ -1,5 +1,6 @@
 "use client";
 
+import { ScrollReveal } from "@/component/ScrollReveal";
 import { htmlTag } from "@/types";
 import { FC, memo } from "react";
 import { Text } from "../Text";
@@ -14,6 +15,7 @@ type Props = {
 
 const UnmemoHeroSection : FC<Props> = ({ tag, title, description }) => {
   return(
+    <ScrollReveal direction="bottom">
     <div className="container">
       <div  className={classes.HeroSection}>
         <div className="row">
@@ -27,6 +29,7 @@ const UnmemoHeroSection : FC<Props> = ({ tag, title, description }) => {
         </div>
       </div>
     </div>
+    </ScrollReveal>
   )
   
 };
