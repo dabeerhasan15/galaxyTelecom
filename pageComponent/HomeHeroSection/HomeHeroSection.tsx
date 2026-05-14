@@ -18,7 +18,7 @@ export const HomeHeroSection = () => {
           <div className="col-lg-8">
             <div className="pt-10 sm:pt-36 text-center">
               <Text tag={htmlTag.h1}>
-                Latest Telecom hardware & robust Service solutions
+                Latest Telecom hardware & robust Service soluti
               </Text>
             </div>
           </div>
